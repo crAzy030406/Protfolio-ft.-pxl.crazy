@@ -24,7 +24,7 @@ export default function Hero() {
               >
                 I'm
               </span>
-              <div className="flex flex-col md:ml-8 lg:ml-12">
+              <div className="flex flex-col">
                 <div className="flex flex-col md:flex-row md:items-baseline md:gap-1">
                   <h1 id="hero-title-1" className="text-5xl sm:text-6xl md:text-8xl lg:text-[10rem] leading-none font-bold font-headline tracking-[0.3em] md:tracking-widest">
                     CRAZY

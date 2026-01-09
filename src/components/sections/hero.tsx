@@ -15,7 +15,7 @@ export default function Hero() {
               <span className="text-2xl font-headline font-bold text-muted-foreground -mr-4" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
                 I'm
               </span>
-              <h1 id="hero-title-1" className="text-6xl md:text-8xl lg:text-[12rem] leading-none font-bold font-headline tracking-tighter w-full text-left -ml-1">
+              <h1 id="hero-title-1" className="text-6xl md:text-8xl lg:text-[12rem] leading-none font-bold font-headline tracking-tighter w-full text-left">
                 CRAZY
               </h1>
             </div>

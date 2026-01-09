@@ -18,14 +18,6 @@ export default function Hero() {
               I'm a passionate designer specializing in creating bold, engaging visuals that tell a story. From branding to digital content, I bring ideas to life with creativity and precision.
             </p>
             <div className="flex gap-4 mt-4">
-              <Button asChild size="lg" style={{
-                backgroundColor: 'hsl(var(--primary))',
-                color: 'hsl(var(--primary-foreground))'
-                }}
-                className="hover:bg-accent"
-              >
-                <Link href="#works">My Works</Link>
-              </Button>
             </div>
           </div>
           <div className="relative flex items-center justify-center">

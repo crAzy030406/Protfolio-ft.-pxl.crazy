@@ -1,7 +1,5 @@
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import Link from 'next/link';
 
 export default function Hero() {
   const profilePhoto = PlaceHolderImages.find((img) => img.id === 'profile-photo');
@@ -9,8 +7,8 @@ export default function Hero() {
   return (
     <section id="about" className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          <div className="flex flex-col gap-4 z-10 text-center lg:text-left items-center lg:items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="flex flex-col gap-4 z-10 text-center md:text-left items-center md:items-start">
             <div className="flex items-baseline">
               <span className="text-xl md:text-2xl font-headline font-bold text-muted-foreground" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
                 I'm

@@ -12,11 +12,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="flex flex-col gap-4 z-10">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold font-headline tracking-tighter">
-              CREATIVE
-              <br />
-              GRAPHIC
-              <br />
-              DESIGNER
+              PSYCHO DESIGNER
             </h1>
             <p className="max-w-lg text-muted-foreground md:text-lg">
               I'm a passionate designer specializing in creating bold, engaging visuals that tell a story. From branding to digital content, I bring ideas to life with creativity and precision.

@@ -18,7 +18,7 @@ export default function Header() {
       setScrolled(isScrolled);
       
       const maxScroll = 300;
-      const opacity = Math.min(currentScrollY / maxScroll, 0.7);
+      const opacity = Math.min(currentScrollY / maxScroll, 0.9);
       setBgOpacity(opacity);
     };
 

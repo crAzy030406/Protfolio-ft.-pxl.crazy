@@ -6,9 +6,13 @@ export default function Hero() {
     <section id="about" className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="flex flex-col gap-4 z-10 text-center items-center md:text-left md:items-start">
-            <div className="flex items-baseline">
-              <span className="text-xl md:text-2xl font-headline font-bold text-muted-foreground" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
+          <div className="z-10 flex flex-col items-center text-center md:items-start md:text-left">
+            
+            <div className="flex flex-col items-center md:flex-row md:items-baseline">
+              <span 
+                className="text-xl font-normal text-muted-foreground/70 md:font-bold md:text-muted-foreground md:text-2xl"
+                style={{ writingMode: 'horizontal-tb' }}
+              >
                 I'm
               </span>
               <div className="flex flex-col items-center md:items-start">
@@ -22,7 +26,8 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <p className="max-w-lg text-muted-foreground md:text-lg mt-4">
+
+            <p className="max-w-lg mt-4 text-muted-foreground md:text-lg">
               I'm a passionate designer specializing in creating bold, engaging visuals that tell a story. From branding to digital content, I bring ideas to life with creativity and precision.
             </p>
           </div>

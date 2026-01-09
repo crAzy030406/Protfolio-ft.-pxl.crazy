@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -59,7 +60,7 @@ export default function Header() {
             </span>
           </Link>
         </div>
-        <div className="flex flex-1 items-center justify-end space-x-2">
+        <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center">
             <Button asChild variant="outline">
               <Link href="/contact">
@@ -67,6 +68,7 @@ export default function Header() {
               </Link>
             </Button>
           </nav>
+          <ThemeToggle />
         </div>
       </div>
     </header>

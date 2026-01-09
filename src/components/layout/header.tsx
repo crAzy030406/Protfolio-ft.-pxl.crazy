@@ -2,8 +2,8 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Mail } from 'lucide-react';
 
 export default function Header() {
   return (
@@ -39,7 +39,7 @@ export default function Header() {
                     whileHover={{ y: '0%' }}
                     transition={{ duration: 0.3 }}
                 >
-                    Contact Me
+                    Let's Talk
                 </motion.span>
               </Link>
             </Button>

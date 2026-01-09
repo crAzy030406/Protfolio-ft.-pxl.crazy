@@ -18,7 +18,7 @@ export default function Header() {
           <nav className="flex items-center">
             <Button asChild variant="outline">
               <Link href="/contact">
-                lets talk
+                Let's Talk
               </Link>
             </Button>
           </nav>

@@ -13,8 +13,8 @@ export default function Hero() {
               <span className="text-xl md:text-2xl font-headline font-bold text-muted-foreground" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
                 I'm
               </span>
-              <div className="flex flex-col">
-                <div className="flex items-baseline gap-2 md:gap-4">
+              <div className="flex flex-col items-center md:items-start">
+                <div className="flex flex-col md:flex-row md:items-baseline md:gap-4">
                   <h1 id="hero-title-1" className="text-5xl sm:text-6xl md:text-8xl lg:text-[10rem] leading-none font-bold font-headline tracking-tighter">
                     CRAZY
                   </h1>

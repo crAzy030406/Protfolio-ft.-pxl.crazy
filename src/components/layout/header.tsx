@@ -1,5 +1,9 @@
+"use client";
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { Mail } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function Header() {
   return (
@@ -14,13 +18,28 @@ export default function Header() {
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
           <nav className="flex items-center">
-            <Button asChild style={{
-                backgroundColor: 'hsl(var(--primary))',
-                color: 'hsl(var(--primary-foreground))'
-            }}
-            className="hover:bg-accent"
-            >
-              <Link href="/contact">Contact Me</Link>
+            <Button asChild variant="outline" className="group overflow-hidden">
+              <Link href="/contact">
+                <motion.span
+                  className="flex items-center justify-center"
+                  initial={{ y: '0%' }}
+                  animate={{ y: '0%' }}
+                  whileHover={{ y: '-120%' }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <span className="transition-opacity duration-300 group-hover:opacity-0">Contact Me</span>
+                </motion.span>
+                <motion.span
+                    className="absolute inset-0 flex items-center justify-center"
+                    initial={{ y: '120%' }}
+                    animate={{ y: '120%' }}
+                    whileHover={{ y: '0%' }}
+                    transition={{ duration: 0.3 }}
+                >
+                    <Mail className="w-5 h-5 mr-2"/>
+                    Let's Talk
+                </motion.span>
+              </Link>
             </Button>
           </nav>
         </div>

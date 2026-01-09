@@ -14,6 +14,9 @@ export default function Hero() {
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-headline tracking-tighter">
               PSYCHO DESIGNER
             </h1>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-headline tracking-tighter">
+              PSYCHO DESIGNER
+            </h1>
             <p className="max-w-lg text-muted-foreground md:text-lg">
               I'm a passionate designer specializing in creating bold, engaging visuals that tell a story. From branding to digital content, I bring ideas to life with creativity and precision.
             </p>

@@ -46,7 +46,7 @@ export default function Header() {
         visible ? "translate-y-0" : "-translate-y-full"
       )}
       style={{
-        backgroundColor: `rgba(21, 21, 21, ${bgOpacity})`,
+        backgroundColor: `hsla(var(--background), ${bgOpacity})`,
         borderBottom: scrolled ? '1px solid hsl(var(--border) / 0.4)' : '1px solid transparent',
         backdropFilter: 'blur(8px)',
       }}

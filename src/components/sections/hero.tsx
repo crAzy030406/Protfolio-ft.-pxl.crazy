@@ -35,7 +35,6 @@ export default function Hero() {
           <div className="relative flex items-center justify-center">
              {profilePhoto && (
               <div className="relative w-72 h-[360px] md:w-96 md:h-[480px]">
-                <div className="absolute inset-0 bg-primary rounded-3xl transform -translate-x-4 -translate-y-4"></div>
                 <Image
                   src={profilePhoto.imageUrl}
                   alt={profilePhoto.description}

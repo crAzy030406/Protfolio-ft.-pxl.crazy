@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="flex flex-col gap-4 z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold font-headline tracking-tighter">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-headline tracking-tighter">
               PSYCHO DESIGNER
             </h1>
             <p className="max-w-lg text-muted-foreground md:text-lg">

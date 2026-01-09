@@ -9,15 +9,27 @@ import { cn } from '@/lib/utils';
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [bgOpacity, setBgOpacity] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
+      const currentScrollY = window.scrollY;
+      
+      // Handle visibility on scroll direction
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setVisible(false); // Scrolling down
+      } else {
+        setVisible(true); // Scrolling up
+      }
+      setLastScrollY(currentScrollY);
+
+      // Handle background opacity and border
+      const isScrolled = currentScrollY > 10;
       setScrolled(isScrolled);
       
-      const scrollY = window.scrollY;
-      const maxScroll = 300; // The scroll distance over which the opacity will increase
-      const opacity = Math.min(scrollY / maxScroll, 0.7); // Cap opacity at 0.7 (70%)
+      const maxScroll = 300;
+      const opacity = Math.min(currentScrollY / maxScroll, 0.7);
       setBgOpacity(opacity);
     };
 
@@ -25,11 +37,14 @@ export default function Header() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [lastScrollY]);
 
   return (
     <header 
-      className="sticky top-0 z-50 w-full transition-all duration-300"
+      className={cn(
+        "sticky top-0 z-50 w-full transition-all duration-300",
+        visible ? "translate-y-0" : "-translate-y-full"
+      )}
       style={{
         backgroundColor: `rgba(21, 21, 21, ${bgOpacity})`,
         borderBottom: scrolled ? '1px solid hsl(var(--border) / 0.4)' : '1px solid transparent',

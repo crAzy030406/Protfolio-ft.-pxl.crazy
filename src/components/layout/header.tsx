@@ -3,29 +3,17 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { ThemeToggle } from '@/components/theme-toggle';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [bgOpacity, setBgOpacity] = useState(0);
-  const [visible, setVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       
-      // Handle visibility on scroll direction
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setVisible(false); // Scrolling down
-      } else {
-        setVisible(true); // Scrolling up
-      }
-      setLastScrollY(currentScrollY);
-
-      // Handle background opacity and border
       const isScrolled = currentScrollY > 10;
       setScrolled(isScrolled);
       
@@ -38,13 +26,12 @@ export default function Header() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollY]);
+  }, []);
 
   return (
     <header 
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300",
-        visible ? "translate-y-0" : "-translate-y-full"
+        "sticky top-0 z-50 w-full transition-all duration-300"
       )}
       style={{
         backgroundColor: `hsla(var(--background), ${bgOpacity})`,

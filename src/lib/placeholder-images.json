@@ -1,3 +1,108 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile-photo",
+      "description": "Designer's profile photo",
+      "imageUrl": "https://images.unsplash.com/photo-1548544149-4835e62ee5b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3Njc5NDQwMzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait person"
+    },
+    {
+      "id": "branding-poster-1",
+      "description": "Bold Branding Poster",
+      "imageUrl": "https://images.unsplash.com/photo-1739204334686-277b2df097ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGdyYXBoaWN8ZW58MHx8fHwxNzY3OTM0MTExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract graphic",
+      "category": "branding posters"
+    },
+    {
+      "id": "branding-poster-2",
+      "description": "Minimalist Branding Poster",
+      "imageUrl": "https://images.unsplash.com/photo-1642789673880-f25084b1c46d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaW5pbWFsaXN0JTIwdHlwb2dyYXBoeXxlbnwwfHx8fDE3Njc5ODA1MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist typography",
+      "category": "branding posters"
+    },
+    {
+      "id": "gaming-content-1",
+      "description": "Esports Team Banner",
+      "imageUrl": "https://images.unsplash.com/photo-1635372708431-64774de60e20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnYW1pbmclMjBlc3BvcnRzfGVufDB8fHx8MTc2Nzk4MDUwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gaming esports",
+      "category": "gaming content"
+    },
+    {
+      "id": "gaming-content-2",
+      "description": "Game Stream Overlay",
+      "imageUrl": "https://images.unsplash.com/photo-1720962158858-5fb16991d2b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmdXR1cmlzdGljJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NzkxMzQ1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic interface",
+      "category": "gaming content"
+    },
+    {
+      "id": "social-media-1",
+      "description": "Fashion Social Media Post",
+      "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmYXNoaW9uJTIwcHJvZHVjdHxlbnwwfHx8fDE3Njc5NzQ5Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fashion product",
+      "category": "social media poster"
+    },
+    {
+      "id": "social-media-2",
+      "description": "Food Promotion Post",
+      "imageUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZWxpY2lvdXMlMjBmb29kfGVufDB8fHx8MTc2NzkxMzg2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "delicious food",
+      "category": "social media poster"
+    },
+    {
+      "id": "movie-poster-1",
+      "description": "Sci-Fi Movie Poster",
+      "imageUrl": "https://images.unsplash.com/photo-1538370965046-79c0d6907d47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGFjZSUyMGdhbGF4eXxlbnwwfHx8fDE3Njc4OTMyMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "space galaxy",
+      "category": "movie poster"
+    },
+    {
+      "id": "movie-poster-2",
+      "description": "Indie Film Poster",
+      "imageUrl": "https://images.unsplash.com/photo-1611673983948-18286e86703e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkcmFtYSUyMHBvcnRyYWl0fGVufDB8fHx8MTc2Nzk4MDUwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "drama portrait",
+      "category": "movie poster"
+    },
+    {
+      "id": "brand-design-1",
+      "description": "Corporate Identity Mockup",
+      "imageUrl": "https://images.unsplash.com/photo-1587569298236-28ceab2d321e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzdGF0aW9uZXJ5JTIwYnJhbmRpbmd8ZW58MHx8fHwxNzY3OTgwNTA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stationery branding",
+      "category": "brand designs"
+    },
+    {
+      "id": "brand-design-2",
+      "description": "Packaging Design",
+      "imageUrl": "https://images.unsplash.com/photo-1669384536597-99ae8c881e65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9kdWN0JTIwcGFja2FnaW5nfGVufDB8fHx8MTc2NzkyNDk2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "product packaging",
+      "category": "brand designs"
+    },
+    {
+      "id": "logo-1",
+      "description": "Tech Company Logo",
+      "imageUrl": "https://images.unsplash.com/photo-1754837369018-ff35655d126f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnZW9tZXRyaWMlMjBsb2dvfGVufDB8fHx8MTc2Nzg2OTkyNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "geometric logo",
+      "category": "logo"
+    },
+    {
+      "id": "logo-2",
+      "description": "Cafe Logo",
+      "imageUrl": "https://images.unsplash.com/photo-1604773851233-7ef99c08735f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbWJsZW0lMjBsb2dvfGVufDB8fHx8MTc2Nzk3NzMyNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "emblem logo",
+      "category": "logo"
+    },
+    {
+      "id": "tshirt-1",
+      "description": "Graphic T-Shirt Design",
+      "imageUrl": "https://images.unsplash.com/photo-1763403063428-10184adc7be3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0c2hpcnQlMjBncmFwaGljfGVufDB8fHx8MTc2Nzk4MDUwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tshirt graphic",
+      "category": "tshirt designs"
+    },
+    {
+      "id": "tshirt-2",
+      "description": "Typographic T-Shirt",
+      "imageUrl": "https://images.unsplash.com/photo-1727159939129-fe1d6ba9724f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0eXBvZ3JhcGh5JTIwcXVvdGV8ZW58MHx8fHwxNzY3OTgwNTA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "typography quote",
+      "category": "tshirt designs"
+    }
+  ]
 }

@@ -5,11 +5,11 @@
 @layer base {
   :root {
     --background: 44 43% 89%; /* #F2E3D5 */
-    --foreground: 202 97% 13%; /* #012E40 */
+    --foreground: 202 97% 10%; /* #012433 */
     --card: 44 43% 92%; /* A slightly lighter version of background */
-    --card-foreground: 202 97% 13%; /* #012E40 */
+    --card-foreground: 202 97% 10%; /* #012433 */
     --popover: 44 43% 89%; /* #F2E3D5 */
-    --popover-foreground: 202 97% 13%; /* #012E40 */
+    --popover-foreground: 202 97% 10%; /* #012433 */
     --primary: 195 96% 18%; /* #024959 */
     --primary-foreground: 44 43% 89%; /* #F2E3D5 */
     --secondary: 195 96% 22%; /* A slightly lighter version of primary */
@@ -64,5 +64,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: hsl(202 97% 8%);
   }
 }

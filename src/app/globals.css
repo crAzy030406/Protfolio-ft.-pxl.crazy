@@ -65,6 +65,20 @@
   body {
     @apply bg-background text-foreground;
   }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: 
+      linear-gradient(to right, hsl(var(--foreground) / 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--foreground) / 0.05) 1px, transparent 1px);
+    background-size: 2rem 2rem;
+    z-index: -1;
+    pointer-events: none;
+  }
   h1, h2, h3, h4, h5, h6 {
     color: hsl(var(--foreground));
   }

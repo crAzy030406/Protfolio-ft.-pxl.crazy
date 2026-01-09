@@ -3,8 +3,8 @@
     {
       "id": "profile-photo",
       "description": "Designer's profile photo",
-      "imageUrl": "https://images.unsplash.com/photo-1548544149-4835e62ee5b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3Njc5NDQwMzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "portrait person"
+      "imageUrl": "https://images.unsplash.com/photo-1600878459198-a2575c4de71b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjB3aXRoJTIwZ2xhc3NlcyUyMGdyZWVuJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3MjgzNTQzODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man glasses"
     },
     {
       "id": "branding-poster-1",

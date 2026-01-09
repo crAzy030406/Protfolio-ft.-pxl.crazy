@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="flex flex-col gap-4 z-10">
-            <div className="flex items-start">
+            <div className="flex items-baseline">
               <span className="text-2xl font-headline font-bold text-muted-foreground pt-4" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
                 I'm
               </span>

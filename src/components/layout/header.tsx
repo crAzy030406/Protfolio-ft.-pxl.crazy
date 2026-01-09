@@ -1,13 +1,40 @@
 "use client";
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+  const [bgOpacity, setBgOpacity] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      setScrolled(isScrolled);
+      
+      const scrollY = window.scrollY;
+      const maxScroll = 300; // The scroll distance over which the opacity will increase
+      const opacity = Math.min(scrollY / maxScroll, 0.7); // Cap opacity at 0.7 (70%)
+      setBgOpacity(opacity);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <header 
-      className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-black/70"
+      className="sticky top-0 z-50 w-full transition-all duration-300"
+      style={{
+        backgroundColor: `rgba(21, 21, 21, ${bgOpacity})`,
+        borderBottom: scrolled ? '1px solid hsl(var(--border) / 0.4)' : '1px solid transparent',
+        backdropFilter: 'blur(8px)',
+      }}
     >
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex items-center">

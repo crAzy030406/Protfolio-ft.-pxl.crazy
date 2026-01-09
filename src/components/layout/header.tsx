@@ -27,7 +27,10 @@ export default function Header() {
                   whileHover={{ y: '-120%' }}
                   transition={{ duration: 0.3 }}
                 >
-                  <span className="transition-opacity duration-300 group-hover:opacity-0">Contact Me</span>
+                  <span className="flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
+                    <Mail className="w-5 h-5 mr-2"/>
+                    Let's Talk
+                  </span>
                 </motion.span>
                 <motion.span
                     className="absolute inset-0 flex items-center justify-center"
@@ -36,8 +39,7 @@ export default function Header() {
                     whileHover={{ y: '0%' }}
                     transition={{ duration: 0.3 }}
                 >
-                    <Mail className="w-5 h-5 mr-2"/>
-                    Let's Talk
+                    Contact Me
                 </motion.span>
               </Link>
             </Button>

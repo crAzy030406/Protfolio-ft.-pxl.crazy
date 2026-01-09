@@ -15,7 +15,7 @@
     --secondary: 195 96% 22%; /* A slightly lighter version of primary */
     --secondary-foreground: 44 43% 89%;
     --muted: 195 96% 22%;
-    --muted-foreground: 44 43% 75%; /* Lighter version of foreground for muted text */
+    --muted-foreground: 202 97% 20%; /* Darker version of foreground for muted text */
     --accent: 180 39% 46%; /* #3CA6A6 */
     --accent-foreground: 44 43% 89%; /* #F2E3D5 */
     --destructive: 0 84.2% 60.2%;

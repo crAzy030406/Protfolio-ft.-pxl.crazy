@@ -34,14 +34,13 @@ export default function Hero() {
           </div>
           <div className="relative flex items-center justify-center">
              {profilePhoto && (
-              <div className="relative w-72 h-72 md:w-96 md:h-96">
+              <div className="relative w-72 h-[360px] md:w-96 md:h-[480px]">
                 <div className="absolute inset-0 bg-primary rounded-3xl transform -translate-x-4 -translate-y-4"></div>
                 <Image
                   src={profilePhoto.imageUrl}
                   alt={profilePhoto.description}
-                  width={500}
-                  height={500}
-                  className="rounded-3xl object-cover w-full h-full relative z-10 border-4 border-background"
+                  fill
+                  className="rounded-3xl object-cover relative z-10 border-4 border-background"
                   data-ai-hint={profilePhoto.imageHint}
                 />
               </div>

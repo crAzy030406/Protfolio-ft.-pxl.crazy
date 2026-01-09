@@ -20,7 +20,7 @@ export default function Hero() {
                   <h1 id="hero-title-1" className="text-6xl md:text-8xl lg:text-[12rem] leading-none font-bold font-headline tracking-tighter text-left">
                     CRAZY
                   </h1>
-                  <h1 id="hero-title-2" className="text-2xl md:text-3xl lg:text-4xl font-bold font-headline tracking-tighter text-muted-foreground whitespace-nowrap">
+                  <h1 id="hero-title-2" className="text-2xl md:text-3xl lg:text-4xl font-normal font-headline tracking-tighter text-muted-foreground whitespace-nowrap">
                     PSYCHO DESIGNER
                   </h1>
                 </div>

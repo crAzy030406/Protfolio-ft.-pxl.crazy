@@ -20,7 +20,7 @@ export default function Hero() {
                 I'm
               </span>
               <span
-                className="hidden md:block mb-2 text-xl font-light text-muted-foreground/70 md:font-bold md:text-muted-foreground md:text-2xl md:absolute md:left-[-250px] md:top-10 md:-rotate-90 md:transform-origin-bottom-left md:mb-0"
+                className="hidden md:block mb-2 text-xl font-light text-muted-foreground/70 md:font-bold md:text-muted-foreground md:text-2xl md:absolute md:left-[-50px] md:top-10 md:-rotate-90 md:transform-origin-bottom-left md:mb-0"
               >
                 I'm
               </span>

@@ -26,7 +26,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <p className="max-w-lg text-muted-foreground md:text-lg">
+            <p className="max-w-lg text-muted-foreground md:text-lg mt-4">
               I'm a passionate designer specializing in creating bold, engaging visuals that tell a story. From branding to digital content, I bring ideas to life with creativity and precision.
             </p>
             <div className="flex gap-4 mt-4">

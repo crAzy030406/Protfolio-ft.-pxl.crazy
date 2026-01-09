@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="flex flex-col gap-4 z-10">
-            <h1 id="hero-title-1" className="text-5xl md:text-7xl lg:text-9xl font-black font-headline tracking-tighter w-full text-left -ml-1">
+            <h1 id="hero-title-1" className="text-6xl md:text-8xl lg:text-[12rem] leading-none font-bold font-headline tracking-tighter w-full text-left -ml-1">
               CRAZY
             </h1>
             <h1 id="hero-title-2" className="text-2xl md:text-3xl lg:text-4xl font-bold font-headline tracking-tighter">

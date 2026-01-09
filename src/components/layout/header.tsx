@@ -8,7 +8,7 @@ export default function Header() {
         <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className="font-bold sm:inline-block font-headline tracking-widest">
-              DSGN
+              pxl.crazy
             </span>
           </Link>
         </div>

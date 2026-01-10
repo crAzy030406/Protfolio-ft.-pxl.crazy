@@ -129,6 +129,22 @@
       "aspectRatio": "23/10"
     },
     {
+      "id": "brand-design-2",
+      "description": "New Brand Design",
+      "imageUrl": "/brandDesign1.jpg",
+      "imageHint": "brand design",
+      "category": "brand designs",
+      "aspectRatio": "16/9"
+    },
+    {
+      "id": "brand-design-3",
+      "description": "New Brand Design",
+      "imageUrl": "/brandDesign1.jpg",
+      "imageHint": "brand design",
+      "category": "brand designs",
+      "aspectRatio": "16/9"
+    },
+    {
       "id": "logo-1",
       "description": "Tech Company Logo",
       "imageUrl": "/logo1.jpg",

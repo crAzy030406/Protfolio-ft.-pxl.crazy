@@ -68,7 +68,7 @@ export default function Portfolio() {
                 exit={{ opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.3 }}
                 className={cn({
-                  'sm:col-span-2 lg:col-span-2': image.aspectRatio === '16/9',
+                  'sm:col-span-2 lg:col-span-2': image.aspectRatio === '16/9' || image.aspectRatio === '23/10',
                 })}
               >
                 <Link href={image.imageUrl} target="_blank" rel="noopener noreferrer" className="block group">
@@ -76,7 +76,11 @@ export default function Portfolio() {
                     <CardContent className="p-0">
                         <div className={cn(
                           "relative overflow-hidden",
-                          image.aspectRatio === '16/9' ? 'aspect-video' : 'aspect-square'
+                          {
+                            'aspect-video': image.aspectRatio === '16/9',
+                            'aspect-[23/10]': image.aspectRatio === '23/10',
+                            'aspect-square': !image.aspectRatio,
+                          }
                         )}>
                         <Image
                             src={image.imageUrl}

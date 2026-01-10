@@ -45,7 +45,8 @@
       "description": "Fashion Social Media Post",
       "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmYXNoaW9uJTIwcHJvZHVjdHxlbnwwfHx8fDE3Njc5NzQ5Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "fashion product",
-      "category": "social media poster"
+      "category": "social media poster",
+      "aspectRatio": "23/10"
     },
     {
       "id": "social-media-2",

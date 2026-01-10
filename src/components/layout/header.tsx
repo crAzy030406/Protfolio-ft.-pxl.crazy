@@ -15,6 +15,14 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  
+  const handleWorksClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const worksSection = document.getElementById('works');
+    if (worksSection) {
+      worksSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <header 
@@ -38,7 +46,7 @@ export default function Header() {
         <div className="flex flex-1 items-center justify-end space-x-2">
           <nav className="hidden md:flex items-center gap-2">
             <Button asChild variant="ghost">
-              <Link href="#works">My Works</Link>
+              <a href="#works" onClick={handleWorksClick}>My Works</a>
             </Button>
             <Button asChild variant="ghost">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">My Agency</a>

@@ -51,7 +51,7 @@
     {
       "id": "social-media-new-1",
       "description": "New Social Media Post",
-      "imageUrl": "https://images.unsplash.com/photo-1676731820551-4b2988ae4e29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGRlc2lnbnxlbnwwfHx8fDE3NjgwODczNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/social4.jpg",
       "imageHint": "abstract design",
       "category": "social media poster",
       "aspectRatio": "23/10"
@@ -87,7 +87,7 @@
     {
       "id": "social-media-new-2",
       "description": "Final Social Media Post",
-      "imageUrl": "https://images.unsplash.com/photo-1659640764406-416f70e32bec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBwYXR0ZXJufGVufDB8fHx8MTc2ODA4NzM0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1759267190469-3d27fd461f55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwcGF0dGVybnxlbnwwfHx8fDE3NjgwODczNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern pattern",
       "category": "social media poster",
       "aspectRatio": "23/10"

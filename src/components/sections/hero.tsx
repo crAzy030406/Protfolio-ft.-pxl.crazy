@@ -1,6 +1,18 @@
+"use client";
+
+import { useState } from 'react';
 import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Hero() {
+  const [isFlipped, setIsFlipped] = useState(false);
+  const profileImage1 = PlaceHolderImages.find(img => img.id === 'profile-photo');
+  const profileImage2 = PlaceHolderImages.find(img => img.id === 'profile-photo-2');
+
+  const handleCardClick = () => {
+    setIsFlipped(!isFlipped);
+  };
 
   return (
     <section id="about" className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden">
@@ -42,28 +54,58 @@ export default function Hero() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center">
-              <div className="relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-center md:justify-self-end">
-                <Image
-                  src="/profile1.png"
-                  alt="Designer's profile photo"
-                  fill
-                  className="rounded-3xl object-cover"
-                  data-ai-hint="man glasses"
-                />
-              </div>
-              <div className="relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-center md:justify-self-start bg-secondary rounded-3xl flex items-center justify-center">
-                <div className="w-[95%] h-[95%] bg-noisy-background rounded-3xl flex flex-col justify-center items-center p-8 font-helvetica">
-                  <div className="text-center">
-                    <p className="text-sm text-muted-foreground">Name</p>
-                    <h3 className="text-2xl font-bold text-foreground mb-4">Ardhendu Halder</h3>
-                    <p className="text-sm text-muted-foreground">Age</p>
-                    <h3 className="text-2xl font-bold text-foreground mb-4">19</h3>
-                    <p className="text-sm text-muted-foreground">Experience</p>
-                    <h3 className="text-2xl font-bold text-foreground mb-4">5 Yrs. +</h3>
-                    <p className="text-sm text-muted-foreground">Based in</p>
-                    <h3 className="text-2xl font-bold text-foreground">Kolkata</h3>
-                  </div>
+              {profileImage1 && (
+                <div className="relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-center md:justify-self-end">
+                  <Image
+                    src={profileImage1.imageUrl}
+                    alt={profileImage1.description}
+                    fill
+                    className="rounded-3xl object-cover"
+                    data-ai-hint={profileImage1.imageHint}
+                  />
                 </div>
+              )}
+              <div 
+                className="relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-center md:justify-self-start cursor-pointer"
+                style={{ perspective: '1200px' }}
+                onClick={handleCardClick}
+              >
+                <motion.div
+                  className="relative w-full h-full"
+                  style={{ transformStyle: 'preserve-3d' }}
+                  initial={false}
+                  animate={{ rotateY: isFlipped ? 180 : 0 }}
+                  transition={{ duration: 0.6, ease: 'easeInOut' }}
+                >
+                  {/* Front of the card */}
+                  <div className="absolute w-full h-full bg-secondary rounded-3xl flex items-center justify-center" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}>
+                    <div className="w-[95%] h-[95%] bg-noisy-background rounded-3xl flex flex-col justify-center items-center p-8 font-helvetica">
+                      <div className="text-center">
+                        <p className="text-sm text-muted-foreground">Name</p>
+                        <h3 className="text-2xl font-bold text-foreground mb-4">Ardhendu Halder</h3>
+                        <p className="text-sm text-muted-foreground">Age</p>
+                        <h3 className="text-2xl font-bold text-foreground mb-4">19</h3>
+                        <p className="text-sm text-muted-foreground">Experience</p>
+                        <h3 className="text-2xl font-bold text-foreground mb-4">5 Yrs. +</h3>
+                        <p className="text-sm text-muted-foreground">Based in</p>
+                        <h3 className="text-2xl font-bold text-foreground">Kolkata</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Back of the card */}
+                  <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
+                    {profileImage2 && (
+                        <Image
+                            src={profileImage2.imageUrl}
+                            alt={profileImage2.description}
+                            fill
+                            className="rounded-3xl object-cover"
+                            data-ai-hint={profileImage2.imageHint}
+                        />
+                    )}
+                  </div>
+                </motion.div>
               </div>
           </div>
         </div>

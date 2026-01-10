@@ -49,13 +49,6 @@
       "category": "social media poster"
     },
     {
-      "id": "social-media-4",
-      "description": "Travel Promotion Post",
-      "imageUrl": "/social4.jpg",
-      "imageHint": "travel landscape",
-      "category": "social media poster"
-    },
-    {
       "id": "social-media-5",
       "description": "Event Announcement",
       "imageUrl": "/social5.jpg",

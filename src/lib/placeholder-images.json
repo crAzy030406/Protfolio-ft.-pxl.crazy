@@ -85,7 +85,7 @@
     {
       "id": "logo-2",
       "description": "Cafe Logo",
-      "imageUrl": "https://images.unsplash.com/photo-1604773851233-7ef99c08735f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbWJsZW0lMjBsb2dvfGVufDB8fHx8MTc2Nzk3NzMyNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/logo3.jpg",
       "imageHint": "emblem logo",
       "category": "logo"
     },

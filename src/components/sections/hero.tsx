@@ -7,15 +7,15 @@ export default function Hero() {
       <div 
         className="absolute inset-0 z-0 opacity-15"
         style={{
-          background: 'radial-gradient(circle at 30% 50%, hsl(var(--primary)) 0%, transparent 40%)',
+          background: 'radial-gradient(circle at 50% 30%, hsl(var(--primary)) 0%, transparent 40%)',
           backgroundRepeat: 'no-repeat',
         }}
       />
       <div className="container mx-auto px-4 md:px-6 max-w-screen-2xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="z-10 flex flex-col items-center text-center md:items-start md:text-left lg:ml-[200px]">
+        <div className="grid grid-cols-1 gap-12 lg:gap-16 items-center text-center">
+          <div className="z-10 flex flex-col items-center">
             
-            <div className="relative flex flex-col items-center md:items-start">
+            <div className="relative flex flex-col items-center">
               <span className="md:hidden mb-2 text-xl font-light text-muted-foreground/70 opacity-70">
                 I'm
               </span>

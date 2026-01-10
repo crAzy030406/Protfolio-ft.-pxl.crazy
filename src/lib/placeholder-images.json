@@ -99,6 +99,14 @@
       "category": "social media poster"
     },
     {
+      "id": "social-media-9",
+      "description": "Digital Art Showcase",
+      "imageUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NjgwODUwNjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract landscape",
+      "category": "social media poster",
+      "aspectRatio": "23/10"
+    },
+    {
       "id": "movie-poster-1",
       "description": "Sci-Fi Movie Poster",
       "imageUrl": "https://images.unsplash.com/photo-1538370965046-79c0d6907d47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGFjZSUyMGdhbGF4eXxlbnwwfHx8fDE3Njc4OTMyMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",

@@ -79,7 +79,8 @@ export default function Portfolio() {
                           {
                             'aspect-video': image.aspectRatio === '16/9',
                             'aspect-[23/10]': image.aspectRatio === '23/10',
-                            'aspect-[4/5]': !image.aspectRatio,
+                            'aspect-square': image.category === 'logo',
+                            'aspect-[4/5]': !image.aspectRatio && image.category !== 'logo',
                           }
                         )}>
                         <Image

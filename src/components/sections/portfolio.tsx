@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -70,28 +71,30 @@ export default function Portfolio() {
                     'sm:col-span-2 lg:col-span-3': image.id === 'brand-design-1',
                 })}
               >
-                <Card className="overflow-hidden group border-2 border-transparent hover:border-accent transition-all duration-300">
-                  <CardContent className="p-0">
-                    <div className={cn(
-                        "relative overflow-hidden",
-                        image.id === 'brand-design-1' ? "aspect-video" : "aspect-[3/4]"
-                        )}>
-                      <Image
-                        src={image.imageUrl}
-                        alt={image.description}
-                        fill
-                        className="object-cover transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:blur-sm"
-                        data-ai-hint={image.imageHint}
-                      />
-                      <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div className="text-center text-white p-4">
-                            <h3 className="font-bold text-lg">{image.description}</h3>
-                            <p className="text-sm capitalize">{image.category}</p>
+                <Link href={image.imageUrl} target="_blank" rel="noopener noreferrer" className="block">
+                    <Card className="overflow-hidden group border-2 border-transparent hover:border-accent transition-all duration-300">
+                    <CardContent className="p-0">
+                        <div className={cn(
+                            "relative overflow-hidden",
+                            image.id === 'brand-design-1' ? "aspect-video" : "aspect-[3/4]"
+                            )}>
+                        <Image
+                            src={image.imageUrl}
+                            alt={image.description}
+                            fill
+                            className="object-cover transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:blur-sm"
+                            data-ai-hint={image.imageHint}
+                        />
+                        <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div className="text-center text-white p-4">
+                                <h3 className="font-bold text-lg">{image.description}</h3>
+                                <p className="text-sm capitalize">{image.category}</p>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                        </div>
+                    </CardContent>
+                    </Card>
+                </Link>
               </motion.div>
             ))}
             </AnimatePresence>

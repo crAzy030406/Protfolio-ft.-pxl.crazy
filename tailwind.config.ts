@@ -21,6 +21,7 @@ export default {
         sans: ['var(--font-sans)', ...fontFamily.sans],
         headline: ['Unbounded', 'sans-serif'],
         code: ['monospace'],
+        helvetica: ['Helvetica', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',

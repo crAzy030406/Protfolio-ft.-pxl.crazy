@@ -10,10 +10,6 @@ export default function Hero() {
   const profileImage1 = PlaceHolderImages.find(img => img.id === 'profile-photo');
   const profileImage2 = PlaceHolderImages.find(img => img.id === 'profile-photo-2');
 
-  const handleCardClick = () => {
-    setIsFlipped(!isFlipped);
-  };
-
   return (
     <section id="about" className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden">
       <div 
@@ -68,14 +64,15 @@ export default function Hero() {
               <div 
                 className="relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-center md:justify-self-start cursor-pointer"
                 style={{ perspective: '1200px' }}
-                onClick={handleCardClick}
+                onMouseEnter={() => setIsFlipped(true)}
+                onMouseLeave={() => setIsFlipped(false)}
               >
                 <motion.div
                   className="relative w-full h-full"
                   style={{ transformStyle: 'preserve-3d' }}
                   initial={false}
                   animate={{ rotateY: isFlipped ? 180 : 0 }}
-                  transition={{ duration: 0.6, ease: 'easeInOut' }}
+                  transition={{ duration: 0.4, ease: 'easeInOut' }}
                 >
                   {/* Front of the card */}
                   <div className="absolute w-full h-full bg-secondary rounded-3xl flex items-center justify-center" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}>

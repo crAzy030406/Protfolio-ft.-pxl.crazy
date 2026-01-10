@@ -67,17 +67,11 @@ export default function Portfolio() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.3 }}
-                className={cn({
-                    'sm:col-span-2 lg:col-span-1': image.id === 'brand-design-1',
-                })}
               >
-                <Link href={image.imageUrl} target="_blank" rel="noopener noreferrer" className="block">
-                    <Card className="overflow-hidden group border-2 border-transparent hover:border-accent transition-all duration-300">
+                <Link href={image.imageUrl} target="_blank" rel="noopener noreferrer" className="block group">
+                    <Card className="overflow-hidden border-2 border-transparent group-hover:border-accent transition-all duration-300">
                     <CardContent className="p-0">
-                        <div className={cn(
-                            "relative overflow-hidden",
-                            image.id === 'brand-design-1' ? "aspect-video" : "aspect-[3/4]"
-                            )}>
+                        <div className="relative overflow-hidden aspect-square">
                         <Image
                             src={image.imageUrl}
                             alt={image.description}

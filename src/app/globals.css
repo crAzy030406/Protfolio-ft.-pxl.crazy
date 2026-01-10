@@ -73,10 +73,8 @@
     width: 100vw;
     height: 100vh;
     background-image: 
-      radial-gradient(ellipse at center, transparent 30%, hsl(var(--background))),
-      linear-gradient(to right, hsl(var(--foreground) / 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(var(--foreground) / 0.05) 1px, transparent 1px);
-    background-size: 100% 100%, 2rem 2rem;
+      radial-gradient(ellipse at center, transparent 30%, hsl(var(--background)));
+    background-size: 100% 100%;
     z-index: -1;
     pointer-events: none;
   }

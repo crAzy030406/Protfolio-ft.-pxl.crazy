@@ -11,7 +11,7 @@ export default function Hero() {
           backgroundRepeat: 'no-repeat',
         }}
       />
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6 max-w-screen-2xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="z-10 flex flex-col items-center text-center md:items-start md:text-left lg:ml-[200px]">
             

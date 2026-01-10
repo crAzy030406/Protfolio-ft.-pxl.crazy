@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from 'react';
@@ -9,6 +10,8 @@ export default function Hero() {
   const [isFlipped, setIsFlipped] = useState(false);
   const profileImage1 = PlaceHolderImages.find(img => img.id === 'profile-photo');
   const profileImage2 = PlaceHolderImages.find(img => img.id === 'profile-photo-2');
+
+  const handleFlip = () => setIsFlipped(prev => !prev);
 
   return (
     <section id="about" className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden">
@@ -66,6 +69,7 @@ export default function Hero() {
                 style={{ perspective: '1200px' }}
                 onMouseEnter={() => setIsFlipped(true)}
                 onMouseLeave={() => setIsFlipped(false)}
+                onClick={handleFlip}
               >
                 <motion.div
                   className="relative w-full h-full"

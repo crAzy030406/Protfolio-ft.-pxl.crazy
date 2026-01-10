@@ -67,11 +67,17 @@ export default function Portfolio() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.3 }}
+                className={cn({
+                  'sm:col-span-2 lg:col-span-2': image.aspectRatio === '16/9',
+                })}
               >
                 <Link href={image.imageUrl} target="_blank" rel="noopener noreferrer" className="block group">
                     <Card className="overflow-hidden border-2 border-transparent group-hover:border-accent transition-all duration-300">
                     <CardContent className="p-0">
-                        <div className="relative overflow-hidden aspect-square">
+                        <div className={cn(
+                          "relative overflow-hidden",
+                          image.aspectRatio === '16/9' ? 'aspect-video' : 'aspect-square'
+                        )}>
                         <Image
                             src={image.imageUrl}
                             alt={image.description}

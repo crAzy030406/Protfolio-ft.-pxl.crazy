@@ -20,14 +20,14 @@ export default function Hero() {
                 I'm
               </span>
               <div className="flex flex-col md:flex-row md:items-end md:gap-1">
-                <h1 id="hero-title-1" className="text-5xl sm:text-6xl md:text-8xl lg:text-[10rem] leading-none font-bold font-headline tracking-[0.3em] md:tracking-[0.3em]">
+                <h1 id="hero-title-1" className="text-5xl sm:text-6xl md:text-8xl leading-none font-bold font-headline tracking-[0.3em] md:tracking-[0.3em]">
                   CRAZY
                 </h1>
                 <div className="hidden md:flex flex-col">
-                   <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap opacity-70">
+                   <h2 className="text-lg sm:text-xl md:text-3xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap opacity-70">
                       I'm
                    </h2>
-                   <h1 id="hero-title-2" className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap">
+                   <h1 id="hero-title-2" className="text-lg sm:text-xl md:text-3xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap">
                      Visual disruptor
                    </h1>
                 </div>

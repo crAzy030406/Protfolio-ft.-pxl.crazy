@@ -17,7 +17,7 @@ export default function Skills() {
                 <div>
                     <h2 className="text-3xl font-bold font-headline mb-4">Experience</h2>
                     <p className="text-muted-foreground leading-relaxed">
-                    With over 5 years in the graphic design industry, I've had the privilege of working with a diverse range of clients, from startups to established brands. My experience spans across creating compelling brand identities, designing engaging digital content, and producing print materials that leave a lasting impression. I thrive on collaborating with clients to transform their vision into impactful design solutions.
+                    With over <strong className="font-semibold text-foreground">5 years</strong> in the graphic design industry, I've had the privilege of working with a diverse range of clients, from startups to established brands. My experience spans across creating compelling brand identities, designing engaging digital content, and producing print materials that leave a lasting impression. I thrive on collaborating with clients to transform their vision into impactful design solutions.
                     </p>
                 </div>
                 <div>

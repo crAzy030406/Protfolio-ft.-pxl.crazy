@@ -56,6 +56,13 @@
       "category": "social media poster"
     },
     {
+      "id": "social-media-3",
+      "description": "Food Promotion Post",
+      "imageUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZWxpY2lvdXMlMjBmb29kfGVufDB8fHx8MTc2NzkxMzg2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "delicious food",
+      "category": "social media poster"
+    },
+    {
       "id": "movie-poster-1",
       "description": "Sci-Fi Movie Poster",
       "imageUrl": "https://images.unsplash.com/photo-1538370965046-79c0d6907d47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGFjZSUyMGdhbGF4eXxlbnwwfHx8fDE3Njc4OTMyMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",

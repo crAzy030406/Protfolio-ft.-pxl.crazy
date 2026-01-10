@@ -37,7 +37,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <p className="max-w-lg mt-4 md:mt-9 text-muted-foreground md:text-lg">
+            <p className="mt-4 md:mt-9 text-muted-foreground md:text-lg max-w-lg lg:max-w-none">
               I'm a passionate designer specializing in creating bold, engaging visuals that tell a story. From branding to digital content, I bring ideas to life with creativity and precision.
             </p>
           </div>

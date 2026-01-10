@@ -16,14 +16,14 @@ export default function Hero() {
           <div className="z-10 flex flex-col items-center">
             
             <div className="relative flex flex-col items-center">
-              <span className="md:hidden mb-2 text-xl font-light text-muted-foreground/70 opacity-70">
+              <span className="lg:hidden mb-2 text-xl font-light text-muted-foreground/70 opacity-70">
                 I'm
               </span>
-              <div className="flex flex-col md:flex-row md:items-end md:gap-1">
-                <h1 id="hero-title-1" className="text-5xl sm:text-6xl md:text-8xl leading-none font-bold font-headline tracking-[0.3em] md:tracking-[0.3em]">
+              <div className="flex flex-col lg:flex-row lg:items-end lg:gap-1">
+                <h1 id="hero-title-1" className="text-5xl sm:text-6xl md:text-8xl leading-none font-bold font-headline tracking-[0.3em] lg:tracking-[0.3em]">
                   CRAZY
                 </h1>
-                <div className="hidden md:flex flex-col">
+                <div className="hidden lg:flex flex-col">
                    <h2 className="text-lg sm:text-xl md:text-3xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap opacity-70">
                       I'm
                    </h2>
@@ -31,7 +31,7 @@ export default function Hero() {
                      Visual disruptor
                    </h1>
                 </div>
-                 <h1 id="hero-title-2" className="md:hidden mt-4 text-lg sm:text-xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap">
+                 <h1 id="hero-title-2" className="lg:hidden mt-4 text-lg sm:text-xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap">
                   Visual disruptor
                 </h1>
               </div>

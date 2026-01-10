@@ -71,6 +71,34 @@
       "aspectRatio": "23/10"
     },
     {
+      "id": "social-media-5",
+      "description": "Event Announcement",
+      "imageUrl": "https://images.unsplash.com/photo-1712903276360-20f76efac6f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxldmVudCUyMGZseWVyfGVufDB8fHx8MTc2Nzk1OTU1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "event flyer",
+      "category": "social media poster"
+    },
+    {
+      "id": "social-media-6",
+      "description": "Product Showcase",
+      "imageUrl": "https://images.unsplash.com/photo-1632222683609-53cd751c2937?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9kdWN0JTIwcGhvdG98ZW58MHx8fHwxNzY4MDg1MDYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "product photo",
+      "category": "social media poster"
+    },
+    {
+      "id": "social-media-7",
+      "description": "Quote Post",
+      "imageUrl": "https://images.unsplash.com/photo-1617251137884-f135eccf6942?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbnNwaXJhdGlvbmFsJTIwcXVvdGV8ZW58MHx8fHwxNzY4MDg1MDYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "inspirational quote",
+      "category": "social media poster"
+    },
+    {
+      "id": "social-media-8",
+      "description": "Behind the Scenes",
+      "imageUrl": "https://images.unsplash.com/photo-1741543616503-65d1de51d8c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYWtpbmclMjBvZnxlbnwwfHx8fDE3NjgwODUwNjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "making of",
+      "category": "social media poster"
+    },
+    {
       "id": "movie-poster-1",
       "description": "Sci-Fi Movie Poster",
       "imageUrl": "https://images.unsplash.com/photo-1538370965046-79c0d6907d47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGFjZSUyMGdhbGF4eXxlbnwwfHx8fDE3Njc4OTMyMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",

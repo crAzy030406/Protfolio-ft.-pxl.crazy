@@ -90,7 +90,7 @@
       "imageUrl": "/social9.jpg",
       "imageHint": "modern pattern",
       "category": "social media poster",
-      "aspectRatio": "23/10"
+      "aspectRatio": "16/9"
     },
     {
       "id": "gaming-content-1",
@@ -130,14 +130,6 @@
     },
     {
       "id": "brand-design-2",
-      "description": "New Brand Design",
-      "imageUrl": "/brandDesign1.jpg",
-      "imageHint": "brand design",
-      "category": "brand designs",
-      "aspectRatio": "16/9"
-    },
-    {
-      "id": "brand-design-3",
       "description": "New Brand Design",
       "imageUrl": "/brandDesign1.jpg",
       "imageHint": "brand design",

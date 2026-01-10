@@ -66,10 +66,16 @@ export default function Portfolio() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.3 }}
+                className={cn({
+                    'sm:col-span-2 lg:col-span-3': image.category === 'brand designs',
+                })}
               >
                 <Card className="overflow-hidden group border-2 border-transparent hover:border-primary transition-all duration-300">
                   <CardContent className="p-0">
-                    <div className="relative aspect-[3/4] overflow-hidden">
+                    <div className={cn(
+                        "relative overflow-hidden",
+                        image.category === 'brand designs' ? "aspect-video" : "aspect-[3/4]"
+                        )}>
                       <Image
                         src={image.imageUrl}
                         alt={image.description}

@@ -76,13 +76,6 @@
       "category": "brand designs"
     },
     {
-      "id": "brand-design-2",
-      "description": "Packaging Design",
-      "imageUrl": "https://images.unsplash.com/photo-1669384536597-99ae8c881e65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9kdWN0JTIwcGFja2FnaW5nfGVufDB8fHx8MTc2NzkyNDk2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "product packaging",
-      "category": "brand designs"
-    },
-    {
       "id": "logo-1",
       "description": "Tech Company Logo",
       "imageUrl": "https://images.unsplash.com/photo-1754837369018-ff35655d126f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnZW9tZXRyaWMlMjBsb2dvfGVufDB8fHx8MTc2Nzg2OTkyNXww&ixlib=rb-4.1.0&q=80&w=1080",

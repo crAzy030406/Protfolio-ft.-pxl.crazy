@@ -59,7 +59,9 @@ export default function Hero() {
                     <p className="text-sm text-muted-foreground">Age</p>
                     <h3 className="text-2xl font-bold text-foreground mb-4">19</h3>
                     <p className="text-sm text-muted-foreground">Experience</p>
-                    <h3 className="text-2xl font-bold text-foreground">5 Yrs. +</h3>
+                    <h3 className="text-2xl font-bold text-foreground mb-4">5 Yrs. +</h3>
+                    <p className="text-sm text-muted-foreground">Based in</p>
+                    <h3 className="text-2xl font-bold text-foreground">Kolkata</h3>
                   </div>
                 </div>
               </div>

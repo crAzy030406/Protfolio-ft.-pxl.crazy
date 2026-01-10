@@ -22,7 +22,7 @@ export default function Skills() {
                 </div>
                 <div>
                     <div className="mb-8">
-                    <h3 className="text-2xl font-bold font-headline mb-4">Skills</h3>
+                    <h3 className="text-2xl font-semibold font-headline mb-4">Skills</h3>
                     <div className="flex flex-wrap gap-2">
                         {skills.map((skill) => (
                         <Badge key={skill} variant="secondary" className="text-sm font-light">{skill}</Badge>
@@ -30,7 +30,7 @@ export default function Skills() {
                     </div>
                     </div>
                     <div>
-                    <h3 className="text-2xl font-bold font-headline mb-4">Software</h3>
+                    <h3 className="text-2xl font-semibold font-headline mb-4">Software</h3>
                     <div className="flex flex-wrap gap-2">
                         {software.map((tool) => (
                         <Badge key={tool} variant="secondary" className="text-sm font-light">{tool}</Badge>

@@ -63,6 +63,14 @@
       "category": "social media poster"
     },
     {
+      "id": "social-media-4",
+      "description": "Travel Promotion Post",
+      "imageUrl": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0cmF2ZWx8ZW58MHx8fHwxNzY3OTgwNTA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel landscape",
+      "category": "social media poster",
+      "aspectRatio": "23/10"
+    },
+    {
       "id": "movie-poster-1",
       "description": "Sci-Fi Movie Poster",
       "imageUrl": "https://images.unsplash.com/photo-1538370965046-79c0d6907d47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGFjZSUyMGdhbGF4eXxlbnwwfHx8fDE3Njc4OTMyMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",

@@ -124,7 +124,8 @@
       "description": "Creatiq Media",
       "imageUrl": "/creatiq.jpg",
       "imageHint": "stationery branding",
-      "category": "brand designs"
+      "category": "brand designs",
+      "aspectRatio": "23/10"
     },
     {
       "id": "logo-1",

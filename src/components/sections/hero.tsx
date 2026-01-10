@@ -41,8 +41,8 @@ export default function Hero() {
               I'm a passionate designer specializing in creating bold, engaging visuals that tell a story. From branding to digital content, I bring ideas to life with creativity and precision.
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center">
-              <div className="relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-center lg:justify-self-end">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center">
+              <div className="relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-center md:justify-self-end">
                 <Image
                   src="/profile1.png"
                   alt="Designer's profile photo"
@@ -51,7 +51,7 @@ export default function Hero() {
                   data-ai-hint="man glasses"
                 />
               </div>
-              <div className="hidden lg:block relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-start bg-secondary rounded-3xl">
+              <div className="relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-center md:justify-self-start bg-secondary rounded-3xl">
               </div>
           </div>
         </div>

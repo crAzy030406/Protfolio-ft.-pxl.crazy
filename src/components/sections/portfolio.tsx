@@ -10,12 +10,12 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const categories = [
   "all",
-  "branding posters",
-  "gaming content",
-  "social media poster",
-  "movie poster",
   "brand designs",
   "logo",
+  "social media poster",
+  "branding posters",
+  "gaming content",
+  "movie poster",
   "tshirt designs",
 ];
 

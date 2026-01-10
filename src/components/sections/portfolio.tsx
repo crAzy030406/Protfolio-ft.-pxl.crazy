@@ -71,8 +71,8 @@ export default function Portfolio() {
                   'sm:col-span-2 lg:col-span-2': image.aspectRatio === '16/9' || image.aspectRatio === '23/10',
                 })}
               >
-                <Link href={image.imageUrl} target="_blank" rel="noopener noreferrer" className="block group">
-                    <Card className="overflow-hidden border-2 border-transparent group-hover:border-accent transition-all duration-300">
+                <Link href={image.imageUrl} target="_blank" rel="noopener noreferrer" className="block">
+                    <Card className="overflow-hidden border-2 border-transparent transition-all duration-300">
                     <CardContent className="p-0">
                         <div className={cn(
                           "relative overflow-hidden",
@@ -86,15 +86,9 @@ export default function Portfolio() {
                             src={image.imageUrl}
                             alt={image.description}
                             fill
-                            className="object-cover transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:blur-sm"
+                            className="object-cover transition-all duration-500 ease-in-out"
                             data-ai-hint={image.imageHint}
                         />
-                        <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <div className="text-center text-white p-4">
-                                <h3 className="font-bold text-lg">{image.description}</h3>
-                                <p className="text-sm capitalize">{image.category}</p>
-                            </div>
-                        </div>
                         </div>
                     </CardContent>
                     </Card>

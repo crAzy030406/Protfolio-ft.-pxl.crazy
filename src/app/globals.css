@@ -65,20 +65,38 @@
   body {
     @apply bg-background text-foreground;
   }
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: 
-      radial-gradient(ellipse at center, transparent 30%, hsl(var(--background)));
-    background-size: 100% 100%;
-    z-index: -1;
-    pointer-events: none;
-  }
   h1, h2, h3, h4, h5, h6 {
     color: hsl(var(--foreground));
   }
+
+  .glowing-ball {
+    position: fixed;
+    border-radius: 50%;
+    background-color: hsl(var(--primary) / 0.6);
+    filter: blur(50px);
+    z-index: -10;
+    will-change: transform;
+    opacity: 0.3;
+  }
+}
+
+@keyframes move-ball-1 {
+  0%, 100% { transform: translate(0vw, 0vh) scale(1); }
+  25% { transform: translate(40vw, 60vh) scale(1.2); }
+  50% { transform: translate(90vw, 20vh) scale(0.8); }
+  75% { transform: translate(10vw, 90vh) scale(1.1); }
+}
+
+@keyframes move-ball-2 {
+  0%, 100% { transform: translate(100vw, 100vh) scale(1); }
+  25% { transform: translate(50vw, 20vh) scale(0.8); }
+  50% { transform: translate(0vw, 80vh) scale(1.2); }
+  75% { transform: translate(80vw, 0vh) scale(0.9); }
+}
+
+@keyframes move-ball-3 {
+  0%, 100% { transform: translate(50vw, 50vh) scale(1.1); }
+  25% { transform: translate(-10vw, 10vh) scale(0.9); }
+  50% { transform: translate(110vw, 70vh) scale(1); }
+  75% { transform: translate(30vw, -10vh) scale(1.2); }
 }

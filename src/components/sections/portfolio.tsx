@@ -80,7 +80,7 @@ export default function Portfolio() {
                         src={image.imageUrl}
                         alt={image.description}
                         fill
-                        className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                        className="object-cover transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:blur-sm"
                         data-ai-hint={image.imageHint}
                       />
                       <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">

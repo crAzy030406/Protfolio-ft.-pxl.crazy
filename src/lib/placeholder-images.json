@@ -17,8 +17,7 @@
       "description": "Bold Branding Poster",
       "imageUrl": "/branding1.jpg",
       "imageHint": "abstract graphic",
-      "category": "branding posters",
-      "aspectRatio": "16/9"
+      "category": "branding posters"
     },
     {
       "id": "branding-poster-2",
@@ -54,8 +53,7 @@
       "description": "Travel Promotion Post",
       "imageUrl": "/social4.jpg",
       "imageHint": "travel landscape",
-      "category": "social media poster",
-      "aspectRatio": "23/10"
+      "category": "social media poster"
     },
     {
       "id": "social-media-5",
@@ -126,8 +124,7 @@
       "description": "Creatiq Media",
       "imageUrl": "/creatiq.jpg",
       "imageHint": "stationery branding",
-      "category": "brand designs",
-      "aspectRatio": "16/9"
+      "category": "brand designs"
     },
     {
       "id": "logo-1",

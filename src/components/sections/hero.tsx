@@ -52,7 +52,7 @@ export default function Hero() {
                 />
               </div>
               <div className="relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-center md:justify-self-start bg-secondary rounded-3xl flex items-center justify-center">
-                <div className="w-[85%] h-[85%] bg-background/40 rounded-3xl"></div>
+                <div className="w-[95%] h-[95%] bg-background rounded-3xl"></div>
               </div>
           </div>
         </div>

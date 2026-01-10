@@ -16,14 +16,14 @@ export default function Hero() {
           <div className="z-10 flex flex-col items-center">
             
             <div className="relative flex flex-col items-center">
-              <div className="flex lg:flex-row lg:items-end lg:gap-1 flex-col">
+              <div className="flex lg:flex-row lg:items-center lg:gap-1 flex-col">
                 <h2 className="lg:hidden text-lg sm:text-xl md:text-3xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap opacity-70">
                     I'm
                 </h2>
                 <h1 id="hero-title-1" className="text-5xl sm:text-6xl md:text-8xl leading-none font-bold font-headline tracking-[0.3em] lg:tracking-[0.3em]">
                   CRAZY
                 </h1>
-                <div className="hidden lg:flex flex-col">
+                <div className="hidden lg:flex flex-col lg:-mt-2">
                    <h2 className="text-lg sm:text-xl md:text-3xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap opacity-70">
                       I'm
                    </h2>

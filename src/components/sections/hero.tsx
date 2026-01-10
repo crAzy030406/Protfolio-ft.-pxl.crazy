@@ -24,7 +24,7 @@ export default function Hero() {
                   CRAZY
                 </h1>
                 <div className="hidden md:flex flex-col">
-                   <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap">
+                   <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap opacity-70">
                       I'm
                    </h2>
                    <h1 id="hero-title-2" className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap">

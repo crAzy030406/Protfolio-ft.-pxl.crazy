@@ -25,7 +25,7 @@ export default function Skills() {
                     <h3 className="text-2xl font-bold font-headline mb-4">Skills</h3>
                     <div className="flex flex-wrap gap-2">
                         {skills.map((skill) => (
-                        <Badge key={skill} variant="secondary" className="text-sm">{skill}</Badge>
+                        <Badge key={skill} variant="secondary" className="text-sm font-light">{skill}</Badge>
                         ))}
                     </div>
                     </div>
@@ -33,7 +33,7 @@ export default function Skills() {
                     <h3 className="text-2xl font-bold font-headline mb-4">Software</h3>
                     <div className="flex flex-wrap gap-2">
                         {software.map((tool) => (
-                        <Badge key={tool} variant="secondary" className="text-sm">{tool}</Badge>
+                        <Badge key={tool} variant="secondary" className="text-sm font-light">{tool}</Badge>
                         ))}
                     </div>
                     </div>

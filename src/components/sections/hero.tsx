@@ -52,8 +52,8 @@ export default function Hero() {
                 />
               </div>
               <div className="relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-center md:justify-self-start bg-secondary rounded-3xl flex items-center justify-center">
-                <div className="w-[95%] h-[95%] bg-noisy-background rounded-3xl flex flex-col justify-center items-start p-8 font-helvetica">
-                  <div className="text-left">
+                <div className="w-[95%] h-[95%] bg-noisy-background rounded-3xl flex flex-col justify-center items-center p-8 font-helvetica">
+                  <div className="text-center">
                     <p className="text-sm text-muted-foreground">Name</p>
                     <h3 className="text-2xl font-bold text-foreground mb-4">Ardhendu Halder</h3>
                     <p className="text-sm text-muted-foreground">Age</p>

@@ -19,12 +19,12 @@ export default function Hero() {
               <span className="md:hidden mb-2 text-xl font-light text-muted-foreground/70 opacity-70">
                 I'm
               </span>
-              <div className="flex flex-col md:flex-row md:items-end md:gap-1">
+              <div className="flex flex-col md:flex-row md:items-start md:gap-1">
                 <h1 id="hero-title-1" className="text-5xl sm:text-6xl md:text-8xl lg:text-[10rem] leading-none font-bold font-headline tracking-[0.3em] md:tracking-widest">
                   CRAZY
                 </h1>
                 <div className="hidden md:flex flex-col">
-                   <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-normal font-headline tracking-[0.2em] md:tracking-tighter text-muted-foreground whitespace-nowrap">
+                   <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap">
                       I'm
                    </h2>
                    <h1 id="hero-title-2" className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap">

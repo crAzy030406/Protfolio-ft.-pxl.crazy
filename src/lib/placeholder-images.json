@@ -17,7 +17,8 @@
       "description": "Bold Branding Poster",
       "imageUrl": "/branding1.jpg",
       "imageHint": "abstract graphic",
-      "category": "branding posters"
+      "category": "branding posters",
+      "aspectRatio": "16/9"
     },
     {
       "id": "branding-poster-2",

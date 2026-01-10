@@ -27,7 +27,7 @@ export default function Hero() {
                    <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-normal font-headline tracking-[0.2em] md:tracking-tighter text-muted-foreground whitespace-nowrap">
                       I'm
                    </h2>
-                   <h1 id="hero-title-2" className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-normal font-headline tracking-[0.2em] md:tracking-tighter text-muted-foreground whitespace-nowrap">
+                   <h1 id="hero-title-2" className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap">
                      PSYCHO DESIGNER
                    </h1>
                 </div>

@@ -17,6 +17,12 @@ export default {
       },
     },
     extend: {
+      backgroundImage: {
+        'noisy-background': `
+          linear-gradient(to right, hsl(var(--card) / 0.8), hsl(var(--background) / 0.9)),
+          url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")
+        `,
+      },
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
         headline: ['Unbounded', 'sans-serif'],

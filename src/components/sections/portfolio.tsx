@@ -68,7 +68,7 @@ export default function Portfolio() {
                 exit={{ opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.3 }}
                 className={cn({
-                    'sm:col-span-2 lg:col-span-3': image.id === 'brand-design-1',
+                    'sm:col-span-2 lg:col-span-1': image.id === 'brand-design-1',
                 })}
               >
                 <Link href={image.imageUrl} target="_blank" rel="noopener noreferrer" className="block">

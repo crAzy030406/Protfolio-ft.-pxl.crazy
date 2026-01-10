@@ -25,7 +25,7 @@ export default function Skills() {
                     <h3 className="text-2xl font-semibold font-headline mb-4">Skills</h3>
                     <div className="flex flex-wrap gap-2">
                         {skills.map((skill) => (
-                        <Badge key={skill} variant="secondary" className="text-sm font-light transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-primary/50 hover:scale-110 hover:brightness-125">{skill}</Badge>
+                        <Badge key={skill} variant="secondary" className="text-sm font-light transition-all duration-300 ease-in-out hover:scale-110">{skill}</Badge>
                         ))}
                     </div>
                     </div>
@@ -33,7 +33,7 @@ export default function Skills() {
                     <h3 className="text-2xl font-semibold font-headline mb-4">Software</h3>
                     <div className="flex flex-wrap gap-2">
                         {software.map((tool) => (
-                        <Badge key={tool} variant="secondary" className="text-sm font-light transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-primary/50 hover:scale-110 hover:brightness-125">{tool}</Badge>
+                        <Badge key={tool} variant="secondary" className="text-sm font-light transition-all duration-300 ease-in-out hover:scale-110">{tool}</Badge>
                         ))}
                     </div>
                     </div>

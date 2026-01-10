@@ -16,10 +16,10 @@ export default function Hero() {
           <div className="z-10 flex flex-col items-center">
             
             <div className="relative flex flex-col items-center">
-              <span className="lg:hidden mb-2 text-xl font-light text-muted-foreground/70 opacity-70">
-                I'm
-              </span>
               <div className="flex flex-col lg:flex-row lg:items-end lg:gap-1">
+                <h2 className="lg:hidden text-lg sm:text-xl md:text-3xl font-normal font-headline tracking-[0.2em] text-muted-foreground whitespace-nowrap opacity-70">
+                    I'm
+                </h2>
                 <h1 id="hero-title-1" className="text-5xl sm:text-6xl md:text-8xl leading-none font-bold font-headline tracking-[0.3em] lg:tracking-[0.3em]">
                   CRAZY
                 </h1>
@@ -41,8 +41,8 @@ export default function Hero() {
               I'm a passionate designer specializing in creating bold, engaging visuals that tell a story. From branding to digital content, I bring ideas to life with creativity and precision.
             </p>
           </div>
-          <div className="relative flex items-center justify-center">
-              <div className="relative w-72 h-[360px] md:w-80 md:h-[400px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center">
+              <div className="relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-center lg:justify-self-end">
                 <Image
                   src="/profile1.png"
                   alt="Designer's profile photo"
@@ -50,6 +50,8 @@ export default function Hero() {
                   className="rounded-3xl object-cover"
                   data-ai-hint="man glasses"
                 />
+              </div>
+              <div className="hidden lg:block relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-start bg-secondary rounded-3xl">
               </div>
           </div>
         </div>

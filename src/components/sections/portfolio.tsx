@@ -57,7 +57,7 @@ export default function Portfolio() {
           ))}
         </div>
 
-        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <AnimatePresence>
             {filteredImages.map((image) => (
               <motion.div
@@ -68,8 +68,7 @@ export default function Portfolio() {
                 exit={{ opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.3 }}
                 className={cn({
-                  'sm:col-span-2 lg:col-span-2': image.aspectRatio === '23/10',
-                  'sm:col-span-2': image.aspectRatio === '16/9',
+                  'sm:col-span-2': image.aspectRatio === '23/10' || image.aspectRatio === '16/9',
                 })}
               >
                 <Link href={image.imageUrl} target="_blank" rel="noopener noreferrer" className="block">

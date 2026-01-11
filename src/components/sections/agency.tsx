@@ -16,7 +16,7 @@ export default function Agency() {
           my agency
         </h3>
         <h2
-          className="text-5xl md:text-8xl font-black font-headline text-center mb-4 uppercase"
+          className="text-4xl sm:text-6xl md:text-8xl font-black font-headline text-center mb-4 uppercase"
           style={{
             WebkitTextStroke: "1px hsl(var(--foreground))",
             color: "transparent",

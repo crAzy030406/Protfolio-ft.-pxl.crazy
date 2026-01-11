@@ -10,7 +10,7 @@
     {
       "id": "profile-photo-2",
       "description": "Designer's second profile photo",
-      "imageUrl": "/profile 2.png",
+      "imageUrl": "/founder2.jpg",
       "imageHint": "male portrait",
       "category": "agency"
     },
@@ -92,7 +92,7 @@
       "imageUrl": "/social9.jpg",
       "imageHint": "modern pattern",
       "category": "social media poster",
-      "aspectRatio": "16/9"
+      "aspectRatio": "23/10"
     },
     {
       "id": "gaming-content-1",

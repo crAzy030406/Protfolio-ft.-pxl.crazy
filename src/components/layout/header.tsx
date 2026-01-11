@@ -24,6 +24,14 @@ export default function Header() {
     }
   };
 
+  const handleAgencyClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const agencySection = document.getElementById('agency');
+    if (agencySection) {
+      agencySection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header 
       className={cn(
@@ -49,7 +57,7 @@ export default function Header() {
               <a href="#works" onClick={handleWorksClick}>My Works</a>
             </Button>
             <Button asChild variant="ghost">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">My Agency</a>
+              <a href="#agency" onClick={handleAgencyClick}>My Agency</a>
             </Button>
           </nav>
           <Button asChild variant="outline" className="bg-background/50">

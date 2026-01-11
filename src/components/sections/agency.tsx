@@ -12,7 +12,7 @@ export default function Agency() {
             color: "transparent",
           }}
         >
-          My Agency
+          IGNITE HAUS
         </h2>
         <p className="max-w-2xl mx-auto text-muted-foreground mb-12">
           Welcome to Ignite Haus, where creativity meets strategy. We are a passionate team dedicated to building impactful brands and crafting stunning visual experiences. From concept to execution, we ignite your vision.

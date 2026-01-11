@@ -20,7 +20,7 @@ const categories = [
   "tshirt designs",
 ];
 
-const portfolioImages = PlaceHolderImages.filter(img => img.category);
+const portfolioImages = PlaceHolderImages.filter(img => img.category && img.category !== 'agency');
 
 export default function Portfolio() {
   const [filter, setFilter] = useState("all");

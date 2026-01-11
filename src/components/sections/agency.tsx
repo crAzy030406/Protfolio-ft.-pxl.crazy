@@ -77,7 +77,7 @@ export default function Agency() {
                     <HelpCircle className="w-24 h-24 text-muted-foreground" />
                 </div>
                 <div className="text-left">
-                    <h4 className="text-xl font-bold text-muted-foreground uppercase tracking-widest mb-2">Manager</h4>
+                    <h4 className="text-xl font-bold text-muted-foreground uppercase tracking-widest mb-2">Co Founder</h4>
                     <p className="text-foreground leading-relaxed">
                         Unknown. This space is reserved for the mysterious manager of Ignite Haus, adding an element of intrigue to the team lineup. Who are they? Only time will tell.
                     </p>

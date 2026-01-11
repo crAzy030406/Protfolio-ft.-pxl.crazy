@@ -5,6 +5,9 @@ export default function Agency() {
   return (
     <section id="agency" className="w-full py-20 md:py-32">
       <div className="container mx-auto px-4 md:px-6 text-center">
+        <h3 className="text-lg font-bold text-muted-foreground uppercase tracking-widest mb-2">
+          my agency
+        </h3>
         <h2
           className="text-5xl md:text-8xl font-black font-headline text-center mb-4 uppercase"
           style={{

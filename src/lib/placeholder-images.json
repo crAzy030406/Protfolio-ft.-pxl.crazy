@@ -4,13 +4,15 @@
       "id": "profile-photo",
       "description": "Designer's profile photo",
       "imageUrl": "/profile1.png",
-      "imageHint": "man glasses"
+      "imageHint": "man glasses",
+      "category": "agency"
     },
     {
       "id": "profile-photo-2",
       "description": "Designer's second profile photo",
       "imageUrl": "/profile 2.png",
-      "imageHint": "male portrait"
+      "imageHint": "male portrait",
+      "category": "agency"
     },
     {
       "id": "branding-poster-1",
@@ -90,7 +92,7 @@
       "imageUrl": "/social9.jpg",
       "imageHint": "modern pattern",
       "category": "social media poster",
-      "aspectRatio": "23/10"
+      "aspectRatio": "16/9"
     },
     {
       "id": "gaming-content-1",
@@ -119,6 +121,14 @@
       "imageUrl": "https://images.unsplash.com/photo-1611673983948-18286e86703e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkcmFtYSUyMHBvcnRyYWl0fGVufDB8fHx8MTc2Nzk4MDUwNXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "drama portrait",
       "category": "movie poster"
+    },
+    {
+      "id": "brand-design-1",
+      "description": "Creatiq Media",
+      "imageUrl": "/brandDesign.jpg",
+      "imageHint": "creative media",
+      "category": "brand designs",
+      "aspectRatio": "16/9"
     },
     {
       "id": "brand-design-2",

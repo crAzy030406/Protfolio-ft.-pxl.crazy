@@ -123,14 +123,6 @@
       "category": "movie poster"
     },
     {
-      "id": "brand-design-1",
-      "description": "Creatiq Media",
-      "imageUrl": "/brandDesign.jpg",
-      "imageHint": "creative media",
-      "category": "brand designs",
-      "aspectRatio": "16/9"
-    },
-    {
       "id": "brand-design-2",
       "description": "New Brand Design",
       "imageUrl": "/brandDesign1.jpg",

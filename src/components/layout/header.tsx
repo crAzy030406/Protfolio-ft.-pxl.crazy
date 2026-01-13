@@ -2,6 +2,7 @@
 "use client";
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Menu } from 'lucide-react';
@@ -15,6 +16,14 @@ import {
 } from "@/components/ui/sheet"
 
 export default function Header() {
+  const pathname = usePathname();
+
+  const handleHomeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
   
   const handleScrollClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -50,7 +59,7 @@ export default function Header() {
         )}
       >
         <div className="mr-4 flex items-center">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
+          <Link href="/" className="mr-6 flex items-center space-x-2" onClick={handleHomeClick}>
             <span className="font-normal sm:inline-block font-headline tracking-widest text-lg">
               pxl.crazy
             </span>
@@ -59,7 +68,7 @@ export default function Header() {
         <div className="flex flex-1 items-center justify-end space-x-2">
           <nav className="hidden md:flex items-center gap-2">
             <Button asChild variant="ghost">
-              <Link href="/">Home</Link>
+              <Link href="/" onClick={handleHomeClick}>Home</Link>
             </Button>
             <Button asChild variant="ghost">
               <Link href="/about">About Us</Link>
@@ -90,7 +99,7 @@ export default function Header() {
                 </SheetHeader>
                 <nav className="flex flex-col gap-6 text-lg font-medium mt-16">
                   <SheetClose asChild>
-                    <Link href="/" className="text-foreground/80 hover:text-primary transition-colors">Home</Link>
+                    <Link href="/" onClick={handleHomeClick} className="text-foreground/80 hover:text-primary transition-colors">Home</Link>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link href="/about" className="text-foreground/80 hover:text-primary transition-colors">About Us</Link>

@@ -2,20 +2,9 @@
 "use server";
 
 import { z } from "zod";
-import { initializeApp, getApps, cert } from 'firebase-admin/app';
-import { getFirestore, FieldValue } from 'firebase-admin/firestore';
-
-// Initialize Firebase Admin SDK
-const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY!);
-
-if (!getApps().length) {
-  initializeApp({
-    credential: cert(serviceAccount),
-  });
-}
-
-const firestore = getFirestore();
-
+import { getFirestore } from "firebase/firestore";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { initializeFirebase } from "@/firebase/client";
 
 const formSchema = z.object({
   name: z.string().min(2),
@@ -35,14 +24,17 @@ export async function submitContactForm(values: z.infer<typeof formSchema>) {
   }
 
   try {
+    const { app } = initializeFirebase();
+    const firestore = getFirestore(app);
+
     const { name, email, phone, requirements } = validatedFields.data;
     
-    await firestore.collection("contacts").add({
+    await addDoc(collection(firestore, "contacts"), {
       name,
       email,
       phone: phone || null,
       requirements,
-      submittedAt: FieldValue.serverTimestamp(),
+      submittedAt: serverTimestamp(),
     });
 
     return {
@@ -51,9 +43,14 @@ export async function submitContactForm(values: z.infer<typeof formSchema>) {
     };
   } catch (error) {
     console.error("Error writing to Firestore: ", error);
+    // In a real app, you'd want to handle this more gracefully
+    let errorMessage = "An internal error occurred. Please try again later.";
+    if (error instanceof Error) {
+        errorMessage = error.message;
+    }
     return {
       success: false,
-      message: "An internal error occurred. Please try again later.",
+      message: errorMessage,
     };
   }
 }

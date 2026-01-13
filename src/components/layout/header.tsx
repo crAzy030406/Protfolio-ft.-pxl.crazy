@@ -3,6 +3,13 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { Menu } from 'lucide-react';
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from "@/components/ui/sheet"
 
 export default function Header() {
   
@@ -50,11 +57,34 @@ export default function Header() {
               <a href="#agency" onClick={handleAgencyClick}>My Agency</a>
             </Button>
           </nav>
-          <Button asChild variant="outline" className="border-white/20 bg-black/20 hover:bg-white/10">
+          <Button asChild variant="outline" className="hidden md:inline-flex border-white/20 bg-black/20 hover:bg-white/10">
             <Link href="/contact">
               Let's Talk
             </Link>
           </Button>
+          <div className="md:hidden">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="outline" size="icon" className="border-white/20 bg-black/20 hover:bg-white/10">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Open menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="bg-background/90 border-l-border/50 backdrop-blur-lg">
+                <nav className="flex flex-col gap-6 text-lg font-medium mt-16">
+                  <SheetClose asChild>
+                    <Link href="#works" onClick={handleWorksClick} className="text-foreground/80 hover:text-primary transition-colors">My Works</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href="#agency" onClick={handleAgencyClick} className="text-foreground/80 hover:text-primary transition-colors">My Agency</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href="/contact" className="text-foreground/80 hover:text-primary transition-colors">Let's Talk</Link>
+                  </SheetClose>
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>

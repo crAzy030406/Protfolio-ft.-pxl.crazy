@@ -26,24 +26,20 @@ export default function Header() {
   };
   
   const handleScrollClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
+    if (pathname === '/') {
       e.preventDefault();
-      section.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
     } else {
-        // If the section is not on the current page, we let the default anchor behavior work
-        // which will navigate to the homepage and then scroll.
-        // The mobile implementation already does this.
+      // Let the default anchor behavior work
     }
   };
 
   const handleMobileScrollClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
+    if (pathname === '/') {
         handleScrollClick(e, sectionId);
     }
-    // If section is not present, the default href will navigate to the homepage.
-    // The SheetClose will close the sheet.
+    // If on a different page, the default href will navigate.
+    // The SheetClose wrapper will close the sheet.
   };
 
   return (
@@ -81,9 +77,9 @@ export default function Header() {
             </Button>
           </nav>
           <Button asChild variant="outline" className="hidden md:inline-flex border-white/20 bg-black/20 hover:bg-white/10">
-            <Link href="/contact">
+            <a href="/#contact" onClick={(e) => handleScrollClick(e, 'contact')}>
               Let's Talk
-            </Link>
+            </a>
           </Button>
           <div className="md:hidden">
             <Sheet>
@@ -111,7 +107,7 @@ export default function Header() {
                     <a href="/#agency" onClick={(e) => handleMobileScrollClick(e, 'agency')} className="text-foreground/80 hover:text-primary transition-colors">My Agency</a>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href="/contact" className="text-foreground/80 hover:text-primary transition-colors">Let's Talk</Link>
+                    <a href="/#contact" onClick={(e) => handleMobileScrollClick(e, 'contact')} className="text-foreground/80 hover:text-primary transition-colors">Let's Talk</a>
                   </SheetClose>
                 </nav>
               </SheetContent>

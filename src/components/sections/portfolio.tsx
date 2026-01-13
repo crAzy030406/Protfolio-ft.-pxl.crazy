@@ -25,9 +25,16 @@ const portfolioImages = PlaceHolderImages.filter(img => img.category && img.cate
 export default function Portfolio() {
   const [filter, setFilter] = useState("all");
 
-  const filteredImages = filter === "all" 
-    ? portfolioImages 
-    : portfolioImages.filter((image) => image.category === filter);
+  const gamingImages = portfolioImages.filter((image) => image.category === 'gaming content');
+  const otherImages = portfolioImages.filter((image) => image.category !== 'gaming content');
+  
+  const filteredImages = filter === "all"
+    ? otherImages
+    : filter === 'gaming content' 
+      ? [] // Handled separately
+      : otherImages.filter((image) => image.category === filter);
+
+  const showGamingContent = filter === 'all' || filter === 'gaming content';
 
   return (
     <section id="works" className="w-full py-20 md:py-32">
@@ -56,6 +63,40 @@ export default function Portfolio() {
             </Button>
           ))}
         </div>
+
+        {showGamingContent && (
+            <motion.div layout className="flex flex-col sm:flex-row gap-8 mb-8">
+                <AnimatePresence>
+                    {gamingImages.map((image) => (
+                    <motion.div
+                        key={image.id}
+                        layout
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.8 }}
+                        transition={{ duration: 0.3 }}
+                        className="flex-1"
+                    >
+                        <Link href={image.imageUrl} target="_blank" rel="noopener noreferrer" className="block">
+                            <Card className="overflow-hidden border-2 border-border/40 transition-all duration-300 bg-card/80 backdrop-blur-sm">
+                            <CardContent className="p-0">
+                                <div className="relative overflow-hidden aspect-video">
+                                <Image
+                                    src={image.imageUrl}
+                                    alt={image.description}
+                                    fill
+                                    className="object-cover transition-all duration-500 ease-in-out"
+                                    data-ai-hint={image.imageHint}
+                                />
+                                </div>
+                            </CardContent>
+                            </Card>
+                        </Link>
+                    </motion.div>
+                    ))}
+                </AnimatePresence>
+            </motion.div>
+        )}
 
         <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <AnimatePresence>

@@ -1,11 +1,10 @@
 "use client"
 
 import * as React from "react"
-import { Bar, BarChart, XAxis, YAxis, Tooltip } from "recharts"
+import { Bar, BarChart, XAxis, YAxis } from "recharts"
 
 import {
   ChartContainer,
-  ChartTooltipContent,
 } from "@/components/ui/chart"
 
 const chartData = [
@@ -40,10 +39,6 @@ export default function ProjectsChart() {
           stroke="hsl(var(--muted-foreground))"
           tickMargin={10}
           tickFormatter={(value) => `${value}+`}
-        />
-        <Tooltip
-          cursor={false}
-          content={<ChartTooltipContent hideLabel />}
         />
         <Bar dataKey="projects" fill="var(--color-projects)" radius={8} />
       </BarChart>

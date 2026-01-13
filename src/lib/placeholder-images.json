@@ -75,6 +75,22 @@
       "aspectRatio": "16/9"
     },
     {
+      "id": "gaming-content-3",
+      "description": "Fantasy RPG Artwork",
+      "imageUrl": "https://images.unsplash.com/photo-1593410733607-4fe72c8f3f73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmYW50YXN5JTIwbGFuZHNjYXBlfGVufDB8fHx8MTc2ODI3OTQzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fantasy landscape",
+      "category": "gaming content",
+      "aspectRatio": "16/9"
+    },
+    {
+      "id": "gaming-content-4",
+      "description": "Cyberpunk Character Design",
+      "imageUrl": "https://images.unsplash.com/photo-1750096319146-6310519b5af2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjeWJlcnB1bmslMjBjaGFyYWN0ZXJ8ZW58MHx8fHwxNzY4MzE2NTQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cyberpunk character",
+      "category": "gaming content",
+      "aspectRatio": "16/9"
+    },
+    {
       "id": "movie-poster-1",
       "description": "Sci-Fi Movie Poster",
       "imageUrl": "https://images.unsplash.com/photo-1538370965046-79c0d6907d47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGFjZSUyMGdhbGF4eXxlbnwwfHx8fDE3Njc4OTMyMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",

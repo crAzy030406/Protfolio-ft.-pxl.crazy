@@ -1,20 +1,6 @@
 {
   "placeholderImages": [
     {
-      "id": "profile-photo",
-      "description": "Designer's profile photo",
-      "imageUrl": "/founder1.jpg",
-      "imageHint": "man glasses",
-      "category": "agency"
-    },
-    {
-      "id": "profile-photo-2",
-      "description": "Designer's second profile photo",
-      "imageUrl": "/profile2.png",
-      "imageHint": "male portrait",
-      "category": "agency"
-    },
-    {
       "id": "branding-poster-1",
       "description": "Bold Branding Poster",
       "imageUrl": "/branding1.jpg",

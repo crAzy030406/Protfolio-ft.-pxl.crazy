@@ -4,12 +4,15 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import heroImagesData from '@/app/lib/hero-images.json';
+import type { ImagePlaceholder } from '@/lib/placeholder-images';
+
+const HeroImages: ImagePlaceholder[] = heroImagesData.heroImages;
 
 export default function Hero() {
   const [isFlipped, setIsFlipped] = useState(false);
-  const profileImage1 = PlaceHolderImages.find(img => img.id === 'profile-photo');
-  const profileImage2 = PlaceHolderImages.find(img => img.id === 'profile-photo-2');
+  const profileImage1 = HeroImages.find(img => img.id === 'profile-photo');
+  const profileImage2 = HeroImages.find(img => img.id === 'profile-photo-2');
 
   const handleFlip = () => setIsFlipped(prev => !prev);
 

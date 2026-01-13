@@ -72,7 +72,7 @@ export default function Portfolio() {
                 })}
               >
                 <Link href={image.imageUrl} target="_blank" rel="noopener noreferrer" className="block">
-                    <Card className="overflow-hidden border-2 border-transparent transition-all duration-300">
+                    <Card className="overflow-hidden border-2 border-border/40 transition-all duration-300 bg-card/80 backdrop-blur-sm">
                     <CardContent className="p-0">
                         <div className={cn(
                           "relative overflow-hidden",

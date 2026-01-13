@@ -8,12 +8,12 @@ import {
 } from "@/components/ui/chart"
 
 const chartData = [
-  { year: "2020", projects: 45 },
-  { year: "2021", projects: 60 },
-  { year: "2022", projects: 25 },
-  { year: "2023", projects: 75 },
-  { year: "2024", projects: 80 },
-  { year: "2025", projects: 90 },
+  { year: "2020", projects: 20 },
+  { year: "2021", projects: 30 },
+  { year: "2022", projects: 5 },
+  { year: "2023", projects: 45 },
+  { year: "2024", projects: 50 },
+  { year: "2025", projects: 75 },
 ]
 
 const chartConfig = {

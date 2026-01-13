@@ -1,5 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
+import RatingChart from "@/components/charts/rating-chart";
+import ProjectsChart from "@/components/charts/projects-chart";
 
 const skills = [
   "Branding & Identity", "Poster Design", "Logo Design", "Social Media Graphics", "Typography", "T-shirt Design",
@@ -76,6 +78,19 @@ export default function Skills() {
                         <h3 className="text-2xl font-semibold font-headline mb-6 text-center md:text-left">Software Proficiency</h3>
                         {softwareRatings.map(skill => <SkillRating key={skill.name} {...skill} />)}
                     </div>
+                </div>
+            </div>
+
+            <div className="bg-black/20 backdrop-blur-md border border-white/20 shadow-lg rounded-3xl p-8 md:p-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-2xl font-semibold font-headline mb-4">Client Rating</h3>
+                    <RatingChart rating={4} />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-2xl font-semibold font-headline mb-4">Projects Completed</h3>
+                    <ProjectsChart />
+                  </div>
                 </div>
             </div>
       </div>

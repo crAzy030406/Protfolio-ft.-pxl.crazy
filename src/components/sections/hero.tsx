@@ -1,20 +1,16 @@
 
 "use client";
 
-import { useState } from 'react';
 import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import heroImagesData from '@/app/lib/hero-images.json';
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 
 const HeroImages: ImagePlaceholder[] = heroImagesData.heroImages;
 
 export default function Hero() {
-  const [isFlipped, setIsFlipped] = useState(false);
   const profileImage1 = HeroImages.find(img => img.id === 'profile-photo');
   const profileImage2 = HeroImages.find(img => img.id === 'profile-photo-2');
-
-  const handleFlip = () => setIsFlipped(prev => !prev);
 
   return (
     <section id="about" className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden">
@@ -68,28 +64,11 @@ export default function Hero() {
                 </div>
               )}
               <div 
-                className="relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-center md:justify-self-start cursor-pointer"
-                style={{ perspective: '1200px' }}
-                onMouseEnter={() => setIsFlipped(true)}
-                onMouseLeave={() => setIsFlipped(false)}
-                onClick={handleFlip}
+                className="relative w-72 h-[360px] md:w-80 md:h-[400px] justify-self-center md:justify-self-start"
               >
-                <motion.div
-                  className="relative w-full h-full"
-                  style={{ transformStyle: 'preserve-3d' }}
-                  initial={false}
-                  animate={{ 
-                    rotateY: isFlipped ? 180 : 0,
-                    filter: isFlipped 
-                      ? ["blur(0px)", "blur(8px)", "blur(0px)"]
-                      : ["blur(0px)", "blur(8px)", "blur(0px)"]
-                  }}
-                  transition={{ duration: 0.6, ease: 'easeInOut' }}
-                >
-                  {/* Front of the card */}
-                  <div className="absolute w-full h-full bg-transparent rounded-3xl flex items-center justify-center border border-white/20" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}>
+                <div className="absolute w-full h-full bg-transparent rounded-3xl flex items-center justify-center border border-white/20">
                     <div className="w-full h-full bg-black/10 backdrop-blur-md rounded-3xl flex flex-col justify-center items-center p-8 font-helvetica">
-                      <div className="text-center">
+                    <div className="text-center">
                         <p className="text-sm text-white/70">Name</p>
                         <h3 className="text-2xl font-bold text-white mb-4">Ardhendu Halder</h3>
                         <p className="text-sm text-white/70">Age</p>
@@ -98,23 +77,9 @@ export default function Hero() {
                         <h3 className="text-2xl font-bold text-white mb-4">5 Yrs. +</h3>
                         <p className="text-sm text-white/70">Based in</p>
                         <h3 className="text-2xl font-bold text-white">Kolkata</h3>
-                      </div>
                     </div>
-                  </div>
-
-                  {/* Back of the card */}
-                  <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
-                    {profileImage2 && (
-                        <Image
-                            src={profileImage2.imageUrl}
-                            alt={profileImage2.description}
-                            fill
-                            className="rounded-3xl object-cover"
-                            data-ai-hint={profileImage2.imageHint}
-                        />
-                    )}
-                  </div>
-                </motion.div>
+                    </div>
+                </div>
               </div>
           </div>
         </div>

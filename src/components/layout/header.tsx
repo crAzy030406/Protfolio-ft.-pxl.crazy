@@ -31,7 +31,7 @@ export default function Header() {
       <div
         className={cn(
           "container flex h-16 items-center rounded-2xl transition-all duration-300",
-          'bg-card/80 border border-border/40 shadow-lg backdrop-blur-sm'
+          'bg-black/20 backdrop-blur-md border border-white/20 shadow-lg'
         )}
       >
         <div className="mr-4 flex items-center">
@@ -50,7 +50,7 @@ export default function Header() {
               <a href="#agency" onClick={handleAgencyClick}>My Agency</a>
             </Button>
           </nav>
-          <Button asChild variant="outline" className="bg-background/50">
+          <Button asChild variant="outline" className="border-white/20 bg-black/20 hover:bg-white/10">
             <Link href="/contact">
               Let's Talk
             </Link>

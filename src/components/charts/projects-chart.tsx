@@ -8,11 +8,11 @@ import {
 } from "@/components/ui/chart"
 
 const chartData = [
-  { year: "2020", projects: 10 },
-  { year: "2021", projects: 25 },
-  { year: "2022", projects: 45 },
-  { year: "2023", projects: 60 },
-  { year: "2024", projects: 75 },
+  { year: "2020", projects: 45 },
+  { year: "2021", projects: 60 },
+  { year: "2022", projects: 25 },
+  { year: "2023", projects: 75 },
+  { year: "2024", projects: 80 },
   { year: "2025", projects: 90 },
 ]
 

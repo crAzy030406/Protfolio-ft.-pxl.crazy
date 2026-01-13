@@ -14,16 +14,16 @@ export default function Skills() {
         <div className="container mx-auto">
             <div className="bg-black/20 backdrop-blur-md border border-white/20 shadow-lg rounded-3xl p-8 md:p-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div>
+                <div className="text-center md:text-left">
                     <h2 className="text-3xl font-semibold font-headline mb-4">Experience</h2>
                     <p className="text-muted-foreground leading-relaxed">
                     With over <strong className="font-semibold text-foreground">5 years</strong> in the graphic design industry, I've had the privilege of working with a diverse range of clients, from startups to established brands. My experience spans across creating compelling brand identities, designing engaging digital content, and producing print materials that leave a lasting impression. I thrive on collaborating with clients to transform their vision into impactful design solutions.
                     </p>
                 </div>
-                <div>
+                <div className="text-center md:text-left">
                     <div className="mb-8">
                     <h3 className="text-2xl font-semibold font-headline mb-4">Skills</h3>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                         {skills.map((skill) => (
                         <Badge key={skill} variant="secondary" className="text-sm font-light transition-all duration-300 ease-in-out hover:scale-110">{skill}</Badge>
                         ))}
@@ -31,7 +31,7 @@ export default function Skills() {
                     </div>
                     <div>
                     <h3 className="text-2xl font-semibold font-headline mb-4">Software</h3>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                         {software.map((tool) => (
                         <Badge key={tool} variant="secondary" className="text-sm font-light transition-all duration-300 ease-in-out hover:scale-110">{tool}</Badge>
                         ))}

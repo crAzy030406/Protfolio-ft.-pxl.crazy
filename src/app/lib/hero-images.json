@@ -3,7 +3,7 @@
       {
         "id": "profile-photo",
         "description": "Designer's profile photo",
-        "imageUrl": "/founder1.jpg",
+        "imageUrl": "/profile1.png",
         "imageHint": "man glasses",
         "category": "agency"
       },

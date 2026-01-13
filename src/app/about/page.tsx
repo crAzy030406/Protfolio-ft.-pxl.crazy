@@ -5,7 +5,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { User, Briefcase, Award, Brain, PenTool, Gamepad2, Camera, Star, Code } from 'lucide-react';
+import { User, Briefcase, Award, Brain, PenTool, Gamepad2, Star, Code } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const sectionVariants = {
@@ -21,7 +21,7 @@ const itemVariants = {
 export default function AboutPage() {
   const details = [
     { icon: User, label: "Name", value: "Ardhendu Halder" },
-    { icon: Award, label: "Age", value: "19+" },
+    { icon: User, label: "Age", value: "19+" },
     { icon: Briefcase, label: "Profession", value: "GFX Designer" },
     { icon: PenTool, label: "Style", value: "Minimal, Professional, Clean" },
     { icon: Code, label: "Experience", value: "5 Yrs. +" },

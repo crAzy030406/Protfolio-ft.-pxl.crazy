@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -9,6 +10,8 @@ import {
   SheetContent,
   SheetTrigger,
   SheetClose,
+  SheetHeader,
+  SheetTitle,
 } from "@/components/ui/sheet"
 
 export default function Header() {
@@ -71,6 +74,9 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="bg-background/90 border-l-border/50 backdrop-blur-lg">
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                </SheetHeader>
                 <nav className="flex flex-col gap-6 text-lg font-medium mt-16">
                   <SheetClose asChild>
                     <Link href="#works" onClick={handleWorksClick} className="text-foreground/80 hover:text-primary transition-colors">My Works</Link>

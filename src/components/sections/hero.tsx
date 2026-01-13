@@ -78,8 +78,13 @@ export default function Hero() {
                   className="relative w-full h-full"
                   style={{ transformStyle: 'preserve-3d' }}
                   initial={false}
-                  animate={{ rotateY: isFlipped ? 180 : 0 }}
-                  transition={{ duration: 0.4, ease: 'easeInOut' }}
+                  animate={{ 
+                    rotateY: isFlipped ? 180 : 0,
+                    filter: isFlipped 
+                      ? ["blur(0px)", "blur(8px)", "blur(0px)"]
+                      : ["blur(0px)", "blur(8px)", "blur(0px)"]
+                  }}
+                  transition={{ duration: 0.6, ease: 'easeInOut' }}
                 >
                   {/* Front of the card */}
                   <div className="absolute w-full h-full bg-transparent rounded-3xl flex items-center justify-center border border-white/20" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}>

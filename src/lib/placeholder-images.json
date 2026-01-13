@@ -91,20 +91,6 @@
       "aspectRatio": "16/9"
     },
     {
-      "id": "movie-poster-1",
-      "description": "Sci-Fi Movie Poster",
-      "imageUrl": "https://images.unsplash.com/photo-1538370965046-79c0d6907d47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGFjZSUyMGdhbGF4eXxlbnwwfHx8fDE3Njc4OTMyMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "space galaxy",
-      "category": "movie poster"
-    },
-    {
-      "id": "movie-poster-2",
-      "description": "Indie Film Poster",
-      "imageUrl": "https://images.unsplash.com/photo-1611673983948-18286e86703e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkcmFtYSUyMHBvcnRyYWl0fGVufDB8fHx8MTc2Nzk4MDUwNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "drama portrait",
-      "category": "movie poster"
-    },
-    {
       "id": "brand-design-2",
       "description": "New Brand Design",
       "imageUrl": "/brandDesign1.jpg",

@@ -17,7 +17,6 @@ const categories = [
   "social media poster",
   "branding posters",
   "gaming content",
-  "movie poster",
   "tshirt designs",
 ];
 

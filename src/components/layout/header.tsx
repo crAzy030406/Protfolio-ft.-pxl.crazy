@@ -16,19 +16,11 @@ import {
 
 export default function Header() {
   
-  const handleWorksClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleScrollClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
-    const worksSection = document.getElementById('works');
-    if (worksSection) {
-      worksSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleAgencyClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const agencySection = document.getElementById('agency');
-    if (agencySection) {
-      agencySection.scrollIntoView({ behavior: 'smooth' });
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -54,10 +46,16 @@ export default function Header() {
         <div className="flex flex-1 items-center justify-end space-x-2">
           <nav className="hidden md:flex items-center gap-2">
             <Button asChild variant="ghost">
-              <a href="#works" onClick={handleWorksClick}>My Works</a>
+              <Link href="/">Home</Link>
             </Button>
             <Button asChild variant="ghost">
-              <a href="#agency" onClick={handleAgencyClick}>My Agency</a>
+              <a href="#about" onClick={(e) => handleScrollClick(e, 'about')}>About Us</a>
+            </Button>
+            <Button asChild variant="ghost">
+              <a href="#works" onClick={(e) => handleScrollClick(e, 'works')}>My Works</a>
+            </Button>
+            <Button asChild variant="ghost">
+              <a href="#agency" onClick={(e) => handleScrollClick(e, 'agency')}>My Agency</a>
             </Button>
           </nav>
           <Button asChild variant="outline" className="hidden md:inline-flex border-white/20 bg-black/20 hover:bg-white/10">
@@ -79,10 +77,16 @@ export default function Header() {
                 </SheetHeader>
                 <nav className="flex flex-col gap-6 text-lg font-medium mt-16">
                   <SheetClose asChild>
-                    <Link href="#works" onClick={handleWorksClick} className="text-foreground/80 hover:text-primary transition-colors">My Works</Link>
+                    <Link href="/" className="text-foreground/80 hover:text-primary transition-colors">Home</Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href="#agency" onClick={handleAgencyClick} className="text-foreground/80 hover:text-primary transition-colors">My Agency</Link>
+                    <Link href="#about" onClick={(e) => handleScrollClick(e, 'about')} className="text-foreground/80 hover:text-primary transition-colors">About Us</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href="#works" onClick={(e) => handleScrollClick(e, 'works')} className="text-foreground/80 hover:text-primary transition-colors">My Works</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href="#agency" onClick={(e) => handleScrollClick(e, 'agency')} className="text-foreground/80 hover:text-primary transition-colors">My Agency</Link>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link href="/contact" className="text-foreground/80 hover:text-primary transition-colors">Let's Talk</Link>

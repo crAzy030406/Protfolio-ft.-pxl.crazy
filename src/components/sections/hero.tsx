@@ -60,6 +60,7 @@ export default function Hero() {
                     fill
                     className="rounded-3xl object-cover"
                     data-ai-hint={profileImage1.imageHint}
+                    priority
                   />
                 </div>
               )}

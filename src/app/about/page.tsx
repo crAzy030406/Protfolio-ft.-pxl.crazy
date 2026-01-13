@@ -135,7 +135,7 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent>
                     <p className="text-muted-foreground">
-                        "Balanced yet concept and aesthetics minimal and balanced."
+                        "My design philosophy is rooted in a delicate balance between strong concepts and minimalist aesthetics."
                     </p>
                 </CardContent>
             </Card>

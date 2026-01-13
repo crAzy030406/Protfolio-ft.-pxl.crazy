@@ -9,6 +9,7 @@ import Agency from '@/components/sections/agency';
 import Portfolio from '@/components/sections/portfolio';
 import CTA from '@/components/sections/cta';
 import { motion } from 'framer-motion';
+import ContactDetails from '@/components/sections/contact-details';
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -40,7 +41,8 @@ export default function Home() {
         
         {/* The "My Works" section is intentionally not animated as requested */}
         <Portfolio />
-        
+
+        <MotionSection><ContactDetails /></MotionSection>
         <MotionSection><CTA /></MotionSection>
       </main>
       <Footer />

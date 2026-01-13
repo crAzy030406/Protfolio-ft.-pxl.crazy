@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border/40 py-6 md:py-8 bg-background/50 backdrop-blur-sm">
+    <footer className="border-t border-white/20 py-6 md:py-8 bg-black/20 backdrop-blur-md">
       <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
         <p className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} Design Showcase. All rights reserved.

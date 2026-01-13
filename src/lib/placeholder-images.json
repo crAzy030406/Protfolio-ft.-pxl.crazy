@@ -129,14 +129,14 @@
     {
       "id": "tshirt-1",
       "description": "Graphic T-Shirt Design",
-      "imageUrl": "https://images.unsplash.com/photo-1763403063428-10184adc7be3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0c2hpcnQlMjBncmFwaGljfGVufDB8fHx8MTc2Nzk4MDUwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/tshirt1.jpg",
       "imageHint": "tshirt graphic",
       "category": "tshirt designs"
     },
     {
       "id": "tshirt-2",
       "description": "Typographic T-Shirt",
-      "imageUrl": "https://images.unsplash.com/photo-1727159939129-fe1d6ba9724f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0eXBvZ3JhcGh5JTIwcXVvdGV8ZW58MHx8fHwxNzY3OTgwNTA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/tshirt2.jpg",
       "imageHint": "typography quote",
       "category": "tshirt designs"
     }

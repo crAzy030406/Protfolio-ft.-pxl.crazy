@@ -17,11 +17,24 @@ import {
 export default function Header() {
   
   const handleScrollClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
-    e.preventDefault();
     const section = document.getElementById(sectionId);
     if (section) {
+      e.preventDefault();
       section.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        // If the section is not on the current page, we let the default anchor behavior work
+        // which will navigate to the homepage and then scroll.
+        // The mobile implementation already does this.
     }
+  };
+
+  const handleMobileScrollClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        handleScrollClick(e, sectionId);
+    }
+    // If section is not present, the default href will navigate to the homepage.
+    // The SheetClose will close the sheet.
   };
 
   return (
@@ -83,24 +96,10 @@ export default function Header() {
                     <Link href="/about" className="text-foreground/80 hover:text-primary transition-colors">About Us</Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <a href="/#works" onClick={(e) => {
-                        const worksSection = document.getElementById('works');
-                        if (worksSection) {
-                            handleScrollClick(e, 'works')
-                        } else {
-                            window.location.href = '/#works';
-                        }
-                    }} className="text-foreground/80 hover:text-primary transition-colors">My Works</a>
+                    <a href="/#works" onClick={(e) => handleMobileScrollClick(e, 'works')} className="text-foreground/80 hover:text-primary transition-colors">My Works</a>
                   </SheetClose>
                   <SheetClose asChild>
-                    <a href="/#agency" onClick={(e) => {
-                        const agencySection = document.getElementById('agency');
-                        if (agencySection) {
-                            handleScrollClick(e, 'agency')
-                        } else {
-                            window.location.href = '/#agency';
-                        }
-                    }} className="text-foreground/80 hover:text-primary transition-colors">My Agency</a>
+                    <a href="/#agency" onClick={(e) => handleMobileScrollClick(e, 'agency')} className="text-foreground/80 hover:text-primary transition-colors">My Agency</a>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link href="/contact" className="text-foreground/80 hover:text-primary transition-colors">Let's Talk</Link>

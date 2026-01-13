@@ -15,16 +15,27 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet"
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useScroll, useMotionValueEvent } from 'framer-motion';
 
 export default function Header() {
   const pathname = usePathname();
   const [isMounted, setIsMounted] = useState(false);
+  const { scrollY } = useScroll();
+  const [hidden, setHidden] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  })
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
-
 
   const handleHomeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (pathname === '/') {
@@ -51,8 +62,8 @@ export default function Header() {
   };
   
   const headerVariants = {
-    hidden: { y: -100, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.5, ease: 'easeOut' } },
+    visible: { y: 0, opacity: 1 },
+    hidden: { y: "-100%", opacity: 0 },
   };
 
   return (
@@ -60,9 +71,9 @@ export default function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50"
       )}
-      initial="hidden"
-      animate="visible"
       variants={headerVariants}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ duration: 0.35, ease: "easeInOut" }}
     >
       <div
         className={cn(

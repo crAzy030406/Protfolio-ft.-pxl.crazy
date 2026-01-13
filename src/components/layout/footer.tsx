@@ -41,16 +41,16 @@ export default function Footer() {
               Creative GFX designer crafting minimal and professional visuals.
             </p>
             <div className="flex items-center gap-4">
-              <Link href="https://www.instagram.com/ignite.haus?igsh=Yjk3bmdvYzF5aXE0&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="group">
+              <Link href="https://www.instagram.com/pxl.crazy/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="group">
                 <Instagram className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
               </Link>
-              <Link href="#" aria-label="Twitter" className="group">
+              <Link href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="group">
                 <Twitter className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
               </Link>
-              <Link href="#" aria-label="GitHub" className="group">
+              <Link href="https://github.com/crAzy030406" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="group">
                 <Github className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
               </Link>
-              <Link href="#" aria-label="LinkedIn" className="group">
+              <Link href="https://www.linkedin.com/in/pxlcrazy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="group">
                 <Linkedin className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
               </Link>
             </div>

@@ -4,7 +4,7 @@
     {
       "id": "profile-photo",
       "description": "Designer's profile photo",
-      "imageUrl": "https://picsum.photos/seed/profile1/400/500",
+      "imageUrl": "/profile1.png",
       "imageHint": "man glasses",
       "category": "agency"
     },

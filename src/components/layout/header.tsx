@@ -58,7 +58,7 @@ export default function Header() {
   return (
     <motion.header 
       className={cn(
-        "fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl"
+        "fixed top-0 left-0 right-0 z-50"
       )}
       initial="hidden"
       animate="visible"
@@ -66,8 +66,8 @@ export default function Header() {
     >
       <div
         className={cn(
-          "container flex h-16 items-center rounded-2xl",
-          'bg-black/50 backdrop-blur-md border border-white/20 shadow-lg'
+          "container flex h-16 items-center",
+          'bg-black/50 backdrop-blur-md'
         )}
       >
         <div className="mr-auto flex items-center">

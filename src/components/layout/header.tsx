@@ -15,7 +15,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet"
 import { useState, useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useScroll, useMotionValueEvent } from 'framer-motion';
 
 export default function Header() {
@@ -26,7 +26,9 @@ export default function Header() {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
-    if (latest > previous && latest > 150) {
+    // Hide header on scroll down, show on scroll up.
+    // The `latest > 50` condition prevents it from hiding on small scrolls at the top.
+    if (latest > previous && latest > 50) {
       setHidden(true);
     } else {
       setHidden(false);
@@ -63,13 +65,13 @@ export default function Header() {
   
   const headerVariants = {
     visible: { y: 0, opacity: 1 },
-    hidden: { y: "-100%", opacity: 0 },
+    hidden: { y: "-150%", opacity: 0 },
   };
 
   return (
     <motion.header 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50"
+        "fixed top-4 left-0 right-0 z-50 container"
       )}
       variants={headerVariants}
       animate={hidden ? "hidden" : "visible"}
@@ -77,7 +79,7 @@ export default function Header() {
     >
       <div
         className={cn(
-          "container flex h-16 items-center",
+          "flex h-16 items-center px-4 rounded-2xl",
           'bg-black/50 backdrop-blur-md'
         )}
       >

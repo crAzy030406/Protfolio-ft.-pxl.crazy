@@ -96,7 +96,7 @@ export default function Header() {
               <Link href="/" onClick={handleHomeClick}>Home</Link>
             </Button>
             <Button asChild variant="ghost">
-              <Link href="/about">About Us</Link>
+              <Link href="/about">About Me</Link>
             </Button>
             <Button asChild variant="ghost">
               <a href="/#works" onClick={(e) => handleScrollClick(e, 'works')}>My Works</a>
@@ -128,7 +128,7 @@ export default function Header() {
                         <Link href="/" onClick={handleHomeClick} className="text-foreground/80 hover:text-primary transition-colors">Home</Link>
                     </SheetClose>
                     <SheetClose asChild>
-                        <Link href="/about" className="text-foreground/80 hover:text-primary transition-colors">About Us</Link>
+                        <Link href="/about" className="text-foreground/80 hover:text-primary transition-colors">About Me</Link>
                     </SheetClose>
                     <SheetClose asChild>
                         <a href="/#works" onClick={(e) => handleMobileScrollClick(e, 'works')} className="text-foreground/80 hover:text-primary transition-colors">My Works</a>

@@ -82,17 +82,17 @@ export default function Hero() {
                   transition={{ duration: 0.4, ease: 'easeInOut' }}
                 >
                   {/* Front of the card */}
-                  <div className="absolute w-full h-full bg-secondary rounded-3xl flex items-center justify-center" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}>
-                    <div className="w-[95%] h-[95%] bg-noisy-background rounded-3xl flex flex-col justify-center items-center p-8 font-helvetica">
+                  <div className="absolute w-full h-full bg-transparent rounded-3xl flex items-center justify-center border border-white/20" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}>
+                    <div className="w-full h-full bg-black/10 backdrop-blur-md rounded-3xl flex flex-col justify-center items-center p-8 font-helvetica">
                       <div className="text-center">
-                        <p className="text-sm text-muted-foreground">Name</p>
-                        <h3 className="text-2xl font-bold text-foreground mb-4">Ardhendu Halder</h3>
-                        <p className="text-sm text-muted-foreground">Age</p>
-                        <h3 className="text-2xl font-bold text-foreground mb-4">19</h3>
-                        <p className="text-sm text-muted-foreground">Experience</p>
-                        <h3 className="text-2xl font-bold text-foreground mb-4">5 Yrs. +</h3>
-                        <p className="text-sm text-muted-foreground">Based in</p>
-                        <h3 className="text-2xl font-bold text-foreground">Kolkata</h3>
+                        <p className="text-sm text-white/70">Name</p>
+                        <h3 className="text-2xl font-bold text-white mb-4">Ardhendu Halder</h3>
+                        <p className="text-sm text-white/70">Age</p>
+                        <h3 className="text-2xl font-bold text-white mb-4">19</h3>
+                        <p className="text-sm text-white/70">Experience</p>
+                        <h3 className="text-2xl font-bold text-white mb-4">5 Yrs. +</h3>
+                        <p className="text-sm text-white/70">Based in</p>
+                        <h3 className="text-2xl font-bold text-white">Kolkata</h3>
                       </div>
                     </div>
                   </div>

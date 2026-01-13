@@ -8,7 +8,7 @@ const skills = [
 ];
 
 const software = [
-  "Adobe Photoshop", "Adobe Illustrator", "Adobe Lightroom",
+  "Adobe Photoshop", "Adobe Illustrator", "Adobe Lightroom", "Alight Motion",
 ];
 
 const skillRatings = [
@@ -24,6 +24,7 @@ const softwareRatings = [
     { name: "Adobe Photoshop", rating: 90 },
     { name: "Adobe Illustrator", rating: 80 },
     { name: "Adobe Lightroom", rating: 90 },
+    { name: "Alight Motion", rating: 70 },
 ];
 
 const SkillRating = ({ name, rating }: { name: string, rating: number }) => (

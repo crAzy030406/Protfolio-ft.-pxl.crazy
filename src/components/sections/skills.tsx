@@ -12,7 +12,7 @@ export default function Skills() {
   return (
     <section id="skills" className="w-full py-20 md:py-32">
         <div className="container mx-auto">
-            <div className="bg-card/80 border border-border/40 shadow-lg backdrop-blur-sm rounded-3xl p-8 md:p-12">
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 shadow-lg rounded-3xl p-8 md:p-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
                     <h2 className="text-3xl font-semibold font-headline mb-4">Experience</h2>

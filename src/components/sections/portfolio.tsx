@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from 'react';
@@ -31,10 +32,17 @@ export default function Portfolio() {
   const filteredImages = filter === "all"
     ? otherImages
     : filter === 'gaming content' 
-      ? [] // Handled separately
+      ? [] // Handled separately now
       : otherImages.filter((image) => image.category === filter);
 
-  const showGamingContent = filter === 'all' || filter === 'gaming content';
+  const showGamingContent = filter === "all" || filter === 'gaming content';
+
+  const finalSocialMediaImageId = 'social-media-new-2';
+  const finalSocialMediaIndex = filteredImages.findIndex(img => img.id === finalSocialMediaImageId);
+  
+  const imagesBeforeGaming = filter === 'all' ? filteredImages.slice(0, finalSocialMediaIndex + 1) : filteredImages;
+  const imagesAfterGaming = filter === 'all' ? filteredImages.slice(finalSocialMediaIndex + 1) : [];
+
 
   return (
     <section id="works" className="w-full py-20 md:py-32">
@@ -64,8 +72,50 @@ export default function Portfolio() {
           ))}
         </div>
 
+        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <AnimatePresence>
+            {imagesBeforeGaming.map((image) => (
+              <motion.div
+                key={image.id}
+                layout
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.8 }}
+                transition={{ duration: 0.3 }}
+                className={cn({
+                  'sm:col-span-2': image.aspectRatio === '23/10' || image.aspectRatio === '16/9',
+                })}
+              >
+                <Link href={image.imageUrl} target="_blank" rel="noopener noreferrer" className="block">
+                    <Card className="overflow-hidden border-2 border-border/40 transition-all duration-300 bg-card/80 backdrop-blur-sm">
+                    <CardContent className="p-0">
+                        <div className={cn(
+                          "relative overflow-hidden",
+                          {
+                            'aspect-video': image.aspectRatio === '16/9',
+                            'aspect-[23/10]': image.aspectRatio === '23/10',
+                            'aspect-square': image.category === 'logo',
+                            'aspect-[4/5]': !image.aspectRatio && image.category !== 'logo',
+                          }
+                        )}>
+                        <Image
+                            src={image.imageUrl}
+                            alt={image.description}
+                            fill
+                            className="object-cover transition-all duration-500 ease-in-out"
+                            data-ai-hint={image.imageHint}
+                        />
+                        </div>
+                    </CardContent>
+                    </Card>
+                </Link>
+              </motion.div>
+            ))}
+            </AnimatePresence>
+        </motion.div>
+
         {showGamingContent && (
-            <motion.div layout className="flex flex-col sm:flex-row gap-8 mb-8">
+            <motion.div layout className="flex flex-col sm:flex-row gap-8 my-8">
                 <AnimatePresence>
                     {gamingImages.map((image) => (
                     <motion.div
@@ -100,7 +150,7 @@ export default function Portfolio() {
 
         <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <AnimatePresence>
-            {filteredImages.map((image) => (
+            {imagesAfterGaming.map((image) => (
               <motion.div
                 key={image.id}
                 layout

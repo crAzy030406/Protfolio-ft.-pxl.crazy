@@ -4,8 +4,18 @@
 import { Github, Twitter, Linkedin, Instagram } from 'lucide-react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  const handleHomeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   const handleScrollClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     // If on homepage, smooth scroll. Otherwise, Next Link will handle navigation.
     if (window.location.pathname === '/') {
@@ -60,7 +70,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-foreground mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/" className="text-muted-foreground hover:text-primary transition-colors">Home</Link></li>
+              <li><a href="/" onClick={handleHomeClick} className="text-muted-foreground hover:text-primary transition-colors">Home</a></li>
               <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">About Me</Link></li>
               <li><a href="/#works" onClick={(e) => handleScrollClick(e, 'works')} className="text-muted-foreground hover:text-primary transition-colors">My Works</a></li>
               <li><a href="/#agency" onClick={(e) => handleScrollClick(e, 'agency')} className="text-muted-foreground hover:text-primary transition-colors">My Agency</a></li>

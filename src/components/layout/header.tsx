@@ -1,20 +1,10 @@
 "use client";
 
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
   
   const handleWorksClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -41,7 +31,7 @@ export default function Header() {
       <div
         className={cn(
           "container flex h-16 items-center rounded-2xl transition-all duration-300",
-          scrolled ? 'bg-card/80 border border-border/40 shadow-lg backdrop-blur-sm' : 'bg-transparent'
+          'bg-card/80 border border-border/40 shadow-lg backdrop-blur-sm'
         )}
       >
         <div className="mr-4 flex items-center">

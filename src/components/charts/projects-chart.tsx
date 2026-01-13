@@ -13,6 +13,7 @@ const chartData = [
   { year: "2022", projects: 45 },
   { year: "2023", projects: 60 },
   { year: "2024", projects: 75 },
+  { year: "2025", projects: 90 },
 ]
 
 const chartConfig = {

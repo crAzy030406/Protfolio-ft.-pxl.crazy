@@ -58,7 +58,7 @@ export default function Header() {
   return (
     <motion.header 
       className={cn(
-        "fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl transition-all duration-300"
+        "fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl"
       )}
       initial="hidden"
       animate="visible"
@@ -66,18 +66,18 @@ export default function Header() {
     >
       <div
         className={cn(
-          "container flex h-16 items-center rounded-2xl transition-all duration-300",
+          "container flex h-16 items-center rounded-2xl",
           'bg-black/50 backdrop-blur-md border border-white/20 shadow-lg'
         )}
       >
-        <div className="mr-4 flex items-center">
+        <div className="mr-auto flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2" onClick={handleHomeClick}>
             <span className="font-normal sm:inline-block font-headline tracking-widest text-lg">
               pxl.crazy
             </span>
           </Link>
         </div>
-        <div className="flex flex-1 items-center justify-end space-x-2">
+        <div className="flex items-center justify-end space-x-2">
           <nav className="hidden md:flex items-center gap-2">
             <Button asChild variant="ghost">
               <Link href="/" onClick={handleHomeClick}>Home</Link>

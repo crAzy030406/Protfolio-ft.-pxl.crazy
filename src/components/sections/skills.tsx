@@ -1,11 +1,11 @@
 import { Badge } from "@/components/ui/badge";
 
 const skills = [
-  "Branding & Identity", "UI/UX Design", "Poster Design", "Logo Design", "Social Media Graphics", "Typography", "T-shirt Design",
+  "Branding & Identity", "Poster Design", "Logo Design", "Social Media Graphics", "Typography", "T-shirt Design",
 ];
 
 const software = [
-  "Adobe Photoshop", "Adobe Illustrator", "Figma", "Adobe InDesign", "Adobe After Effects", "Blender",
+  "Adobe Photoshop", "Adobe Illustrator",
 ];
 
 export default function Skills() {

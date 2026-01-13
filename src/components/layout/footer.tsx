@@ -1,7 +1,9 @@
+
 "use client";
 
 import { Github, Twitter, Linkedin, Instagram } from 'lucide-react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function Footer() {
   const handleScrollClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
@@ -12,8 +14,19 @@ export default function Footer() {
     }
   };
 
+  const footerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+
   return (
-    <footer className="border-t border-white/20 bg-black/20 backdrop-blur-md">
+    <motion.footer 
+      className="border-t border-white/20 bg-black/20 backdrop-blur-md"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={footerVariants}
+    >
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           
@@ -80,6 +93,6 @@ export default function Footer() {
           </p>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }

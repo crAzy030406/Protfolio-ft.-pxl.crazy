@@ -15,6 +15,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet"
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Header() {
   const pathname = usePathname();
@@ -48,12 +49,20 @@ export default function Header() {
     // If on a different page, the default href will navigate.
     // The SheetClose wrapper will close the sheet.
   };
+  
+  const headerVariants = {
+    hidden: { y: -100, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5, ease: 'easeOut' } },
+  };
 
   return (
-    <header 
+    <motion.header 
       className={cn(
         "fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl transition-all duration-300"
       )}
+      initial="hidden"
+      animate="visible"
+      variants={headerVariants}
     >
       <div
         className={cn(
@@ -124,6 +133,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }

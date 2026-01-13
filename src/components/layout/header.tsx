@@ -49,13 +49,13 @@ export default function Header() {
               <Link href="/">Home</Link>
             </Button>
             <Button asChild variant="ghost">
-              <a href="#about" onClick={(e) => handleScrollClick(e, 'about')}>About Us</a>
+              <Link href="/about">About Us</Link>
             </Button>
             <Button asChild variant="ghost">
-              <a href="#works" onClick={(e) => handleScrollClick(e, 'works')}>My Works</a>
+              <a href="/#works" onClick={(e) => handleScrollClick(e, 'works')}>My Works</a>
             </Button>
             <Button asChild variant="ghost">
-              <a href="#agency" onClick={(e) => handleScrollClick(e, 'agency')}>My Agency</a>
+              <a href="/#agency" onClick={(e) => handleScrollClick(e, 'agency')}>My Agency</a>
             </Button>
           </nav>
           <Button asChild variant="outline" className="hidden md:inline-flex border-white/20 bg-black/20 hover:bg-white/10">
@@ -80,13 +80,27 @@ export default function Header() {
                     <Link href="/" className="text-foreground/80 hover:text-primary transition-colors">Home</Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href="#about" onClick={(e) => handleScrollClick(e, 'about')} className="text-foreground/80 hover:text-primary transition-colors">About Us</Link>
+                    <Link href="/about" className="text-foreground/80 hover:text-primary transition-colors">About Us</Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href="#works" onClick={(e) => handleScrollClick(e, 'works')} className="text-foreground/80 hover:text-primary transition-colors">My Works</Link>
+                    <a href="/#works" onClick={(e) => {
+                        const worksSection = document.getElementById('works');
+                        if (worksSection) {
+                            handleScrollClick(e, 'works')
+                        } else {
+                            window.location.href = '/#works';
+                        }
+                    }} className="text-foreground/80 hover:text-primary transition-colors">My Works</a>
                   </SheetClose>
                   <SheetClose asChild>
-                    <Link href="#agency" onClick={(e) => handleScrollClick(e, 'agency')} className="text-foreground/80 hover:text-primary transition-colors">My Agency</Link>
+                    <a href="/#agency" onClick={(e) => {
+                        const agencySection = document.getElementById('agency');
+                        if (agencySection) {
+                            handleScrollClick(e, 'agency')
+                        } else {
+                            window.location.href = '/#agency';
+                        }
+                    }} className="text-foreground/80 hover:text-primary transition-colors">My Agency</a>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link href="/contact" className="text-foreground/80 hover:text-primary transition-colors">Let's Talk</Link>

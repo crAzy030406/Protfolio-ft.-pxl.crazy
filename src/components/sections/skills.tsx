@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { Progress } from "@/components/ui/progress";
 
 const skills = [
   "Branding & Identity", "Poster Design", "Logo Design", "Social Media Graphics", "Typography", "T-shirt Design",
@@ -8,10 +9,34 @@ const software = [
   "Adobe Photoshop", "Adobe Illustrator",
 ];
 
+const skillRatings = [
+    { name: "Brand Identity", rating: 80 },
+    { name: "Poster Design", rating: 100 },
+    { name: "Logo Design", rating: 80 },
+    { name: "Social Media Graphics", rating: 100 },
+    { name: "Typography", rating: 100 },
+    { name: "T-shirt Design", rating: 80 },
+];
+
+const softwareRatings = [
+    { name: "Adobe Photoshop", rating: 90 },
+    { name: "Adobe Illustrator", rating: 80 },
+];
+
+const SkillRating = ({ name, rating }: { name: string, rating: number }) => (
+    <div className="mb-4">
+      <div className="flex justify-between items-center mb-1">
+        <span className="text-sm font-medium text-foreground">{name}</span>
+        <span className="text-sm font-medium text-muted-foreground">{rating / 20}/5</span>
+      </div>
+      <Progress value={rating} className="h-2" />
+    </div>
+);
+
 export default function Skills() {
   return (
     <section id="skills" className="w-full py-20 md:py-32">
-        <div className="container mx-auto">
+        <div className="container mx-auto space-y-8">
             <div className="bg-black/20 backdrop-blur-md border border-white/20 shadow-lg rounded-3xl p-8 md:p-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div className="text-center md:text-left">
@@ -38,6 +63,19 @@ export default function Skills() {
                     </div>
                     </div>
                 </div>
+                </div>
+            </div>
+
+            <div className="bg-black/20 backdrop-blur-md border border-white/20 shadow-lg rounded-3xl p-8 md:p-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                    <div>
+                        <h3 className="text-2xl font-semibold font-headline mb-6 text-center md:text-left">Design Skills</h3>
+                        {skillRatings.map(skill => <SkillRating key={skill.name} {...skill} />)}
+                    </div>
+                    <div>
+                        <h3 className="text-2xl font-semibold font-headline mb-6 text-center md:text-left">Software Proficiency</h3>
+                        {softwareRatings.map(skill => <SkillRating key={skill.name} {...skill} />)}
+                    </div>
                 </div>
             </div>
       </div>

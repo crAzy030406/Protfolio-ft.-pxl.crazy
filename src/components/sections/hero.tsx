@@ -13,7 +13,7 @@ export default function Hero() {
   const profileImage2 = HeroImages.find(img => img.id === 'profile-photo-2');
 
   return (
-    <section id="about" className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden">
+    <section id="about" className="relative w-full pt-40 pb-20 md:py-32 lg:py-40 overflow-hidden">
       <div 
         className="absolute inset-0 z-0 opacity-15"
         style={{

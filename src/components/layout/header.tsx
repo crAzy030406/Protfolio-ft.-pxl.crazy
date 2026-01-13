@@ -31,7 +31,7 @@ export default function Header() {
       <div
         className={cn(
           "container flex h-16 items-center rounded-2xl transition-all duration-300",
-          'bg-black/20 backdrop-blur-md border border-white/20 shadow-lg'
+          'bg-black/50 backdrop-blur-md border border-white/20 shadow-lg'
         )}
       >
         <div className="mr-4 flex items-center">

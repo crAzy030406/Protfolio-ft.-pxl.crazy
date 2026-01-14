@@ -40,10 +40,10 @@ export default function ContactPage() {
                     backgroundColor: 'hsl(var(--primary))',
                     color: 'hsl(var(--primary-foreground))'
                 }}>
-                    <Link href="mailto:work.pxlcrazy@gmail.com">
+                    <a href="mailto:work.pxlcrazy@gmail.com">
                         <Mail className="mr-2 h-5 w-5" />
                         Mail Me
-                    </Link>
+                    </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="w-full sm:w-auto">
                     <Link href="https://wa.me/919064749810" target="_blank" rel="noopener noreferrer">

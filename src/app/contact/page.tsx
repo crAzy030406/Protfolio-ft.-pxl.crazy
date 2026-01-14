@@ -14,6 +14,8 @@ const sectionVariants = {
 };
 
 export default function ContactPage() {
+  const gmailComposeUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=work.pxlcrazy@gmail.com";
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -40,7 +42,7 @@ export default function ContactPage() {
                     backgroundColor: 'hsl(var(--primary))',
                     color: 'hsl(var(--primary-foreground))'
                 }}>
-                    <a href="mailto:work.pxlcrazy@gmail.com">
+                    <a href={gmailComposeUrl} target="_blank" rel="noopener noreferrer">
                         <Mail className="mr-2 h-5 w-5" />
                         Mail Me
                     </a>

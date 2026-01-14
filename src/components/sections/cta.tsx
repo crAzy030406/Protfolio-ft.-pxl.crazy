@@ -1,8 +1,9 @@
 
 "use client";
 
-import { ContactForm } from "@/app/contact/contact-form";
+import { Button } from "@/components/ui/button";
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const containerVariants = {
   hidden: { opacity: 0, scale: 0.9 },
@@ -31,11 +32,16 @@ export default function CTA() {
                 Have a project in mind?
               </motion.h2>
               <motion.p className="text-muted-foreground mb-8 md:mb-0" variants={itemVariants}>
-                Let's create something amazing together. Fill out the form, and I'll get back to you to discuss your ideas.
+                Let's create something amazing together. I'm ready to discuss your ideas and bring them to life.
               </motion.p>
             </motion.div>
-            <motion.div className="w-full" variants={itemVariants}>
-              <ContactForm />
+            <motion.div className="w-full flex justify-center md:justify-end" variants={itemVariants}>
+              <Button asChild size="lg" style={{
+                    backgroundColor: 'hsl(var(--primary))',
+                    color: 'hsl(var(--primary-foreground))'
+                }}>
+                <Link href="/contact">Contact Me</Link>
+              </Button>
             </motion.div>
           </div>
         </motion.div>

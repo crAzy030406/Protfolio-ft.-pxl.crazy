@@ -111,7 +111,7 @@ export default function Header() {
             </a>
           </Button>
           <div className="md:hidden">
-            {isMounted && (
+            {isMounted ? (
                 <Sheet>
                 <SheetTrigger asChild>
                     <Button variant="outline" size="icon" className="border-white/20 bg-black/20 hover:bg-white/10">
@@ -142,6 +142,11 @@ export default function Header() {
                     </nav>
                 </SheetContent>
                 </Sheet>
+            ) : (
+              <Button variant="outline" size="icon" className="border-white/20 bg-black/20 hover:bg-white/10">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Open menu</span>
+              </Button>
             )}
           </div>
         </div>

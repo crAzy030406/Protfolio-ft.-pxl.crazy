@@ -55,10 +55,10 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-          <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-8" variants={sectionVariants}>
+          <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:items-start" variants={sectionVariants}>
             <Card className="bg-black/20 backdrop-blur-md border-white/20">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 font-headline">
+                <CardTitle className="flex items-center justify-center md:justify-start gap-2 font-headline">
                   <User /> Personal Details
                 </CardTitle>
               </CardHeader>
@@ -79,7 +79,7 @@ export default function AboutPage() {
               <motion.div variants={itemVariants}>
                 <Card className="bg-black/20 backdrop-blur-md border-white/20">
                   <CardHeader>
-                    <CardTitle className="flex items-center gap-2 font-headline">
+                    <CardTitle className="flex items-center justify-center md:justify-start gap-2 font-headline">
                       <Brain /> Education
                     </CardTitle>
                   </CardHeader>
@@ -100,11 +100,11 @@ export default function AboutPage() {
               <motion.div variants={itemVariants}>
                 <Card className="bg-black/20 backdrop-blur-md border-white/20">
                   <CardHeader>
-                    <CardTitle className="flex items-center gap-2 font-headline">
+                    <CardTitle className="flex items-center justify-center md:justify-start gap-2 font-headline">
                       <Gamepad2 /> Hobbies & Interests
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="flex flex-wrap gap-2">
+                  <CardContent className="flex flex-wrap justify-center md:justify-start gap-2">
                     {hobbies.map(hobby => (
                       <Badge key={hobby} variant="outline" className="text-sm font-light bg-white/5 border-white/10 backdrop-blur-sm">{hobby}</Badge>
                     ))}
@@ -117,11 +117,11 @@ export default function AboutPage() {
           <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8" variants={sectionVariants}>
             <Card className="bg-black/20 backdrop-blur-md border-white/20">
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-2 font-headline">
+                    <CardTitle className="flex items-center justify-center md:justify-start gap-2 font-headline">
                     <Star /> Aims & Goals
                     </CardTitle>
                 </CardHeader>
-                <CardContent className="flex flex-wrap gap-2">
+                <CardContent className="flex flex-wrap justify-center md:justify-start gap-2">
                     {aims.map(aim => (
                         <Badge key={aim} variant="outline" className="text-sm font-light bg-white/5 border-white/10 backdrop-blur-sm">{aim}</Badge>
                     ))}
@@ -129,12 +129,12 @@ export default function AboutPage() {
             </Card>
             <Card className="bg-black/20 backdrop-blur-md border-white/20">
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-2 font-headline">
+                    <CardTitle className="flex items-center justify-center md:justify-start gap-2 font-headline">
                         <PenTool /> Design Philosophy
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground text-center md:text-left">
                         "My design philosophy is rooted in a delicate balance between strong concepts and minimalist aesthetics."
                     </p>
                 </CardContent>

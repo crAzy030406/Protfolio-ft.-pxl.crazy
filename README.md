@@ -1,5 +1,5 @@
-# Firebase Studio
+this is the sample portfolio website for my personal use
+not a developer , just a experienced graphics designer from the last 5 years 
+© 2026 crazy.pxl reserved
 
-This is a NextJS starter in Firebase Studio.
-
-To get started, take a look at src/app/page.tsx.
+get in touch at work.pxlcrazy@gmail.com

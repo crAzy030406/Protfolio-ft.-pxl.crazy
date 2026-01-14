@@ -23,6 +23,7 @@ export default function Header() {
   const [isMounted, setIsMounted] = useState(false);
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
@@ -56,12 +57,18 @@ export default function Header() {
   };
 
   const handleMobileScrollClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    setIsMobileMenuOpen(false);
     if (pathname === '/') {
-        handleScrollClick(e, sectionId);
+      e.preventDefault();
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // The href will handle navigation for non-homepage links.
     }
-    // If on a different page, the default href will navigate.
-    // The SheetClose wrapper will close the sheet.
   };
+
+  const handleMobileLinkClick = () => {
+    setIsMobileMenuOpen(false);
+  }
   
   const headerVariants = {
     visible: { y: 0, opacity: 1 },
@@ -112,7 +119,7 @@ export default function Header() {
           </Button>
           <div className="md:hidden">
             {isMounted ? (
-                <Sheet>
+                <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
                 <SheetTrigger asChild>
                     <Button variant="outline" size="icon" className="border-white/20 bg-black/20 hover:bg-white/10">
                     <Menu className="h-6 w-6" />
@@ -124,21 +131,11 @@ export default function Header() {
                     <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                     </SheetHeader>
                     <nav className="flex flex-col gap-6 text-lg font-medium mt-16">
-                    <SheetClose asChild>
-                        <Link href="/" onClick={handleHomeClick} className="text-foreground/80 hover:text-primary transition-colors">Home</Link>
-                    </SheetClose>
-                    <SheetClose asChild>
-                        <Link href="/about" className="text-foreground/80 hover:text-primary transition-colors">About Me</Link>
-                    </SheetClose>
-                    <SheetClose asChild>
+                        <Link href="/" onClick={() => { handleHomeClick; handleMobileLinkClick(); }} className="text-foreground/80 hover:text-primary transition-colors">Home</Link>
+                        <Link href="/about" onClick={handleMobileLinkClick} className="text-foreground/80 hover:text-primary transition-colors">About Me</Link>
                         <a href="/#works" onClick={(e) => handleMobileScrollClick(e, 'works')} className="text-foreground/80 hover:text-primary transition-colors">My Works</a>
-                    </SheetClose>
-                    <SheetClose asChild>
                         <a href="/#agency" onClick={(e) => handleMobileScrollClick(e, 'agency')} className="text-foreground/80 hover:text-primary transition-colors">My Agency</a>
-                    </SheetClose>
-                    <SheetClose asChild>
                         <a href="/#contact" onClick={(e) => handleMobileScrollClick(e, 'contact')} className="text-foreground/80 hover:text-primary transition-colors">Let's Talk</a>
-                    </SheetClose>
                     </nav>
                 </SheetContent>
                 </Sheet>

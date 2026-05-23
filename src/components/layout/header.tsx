@@ -29,7 +29,7 @@ export default function Header() {
     const previous = scrollY.getPrevious();
     // Hide header on scroll down, show on scroll up.
     // The `latest > 50` condition prevents it from hiding on small scrolls at the top.
-    if (latest > previous && latest > 50) {
+    if (previous !== undefined && latest > previous && latest > 50) {
       setHidden(true);
     } else {
       setHidden(false);

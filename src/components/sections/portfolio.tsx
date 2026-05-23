@@ -44,7 +44,7 @@ export default function Portfolio() {
 
 
   return (
-    <section id="works" className="w-full py-20 md:py-32">
+    <section id="works" className="w-full py-20 md:py-32 bg-gradient-to-b from-background/50 to-transparent">
       <div className="container mx-auto px-4 md:px-6 text-center">
         <h2 className="text-5xl md:text-8xl font-black font-headline text-center mb-4 uppercase" style={{ WebkitTextStroke: '1px hsl(var(--foreground))', color: 'transparent' }}>
           My Works

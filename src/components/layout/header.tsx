@@ -111,6 +111,9 @@ export default function Header() {
             <Button asChild variant="ghost">
               <a href="/#agency" onClick={(e) => handleScrollClick(e, 'agency')}>My Agency</a>
             </Button>
+            <Button asChild variant="ghost">
+              <a href="/#branding-reports" onClick={(e) => handleScrollClick(e, 'branding-reports')}>Case Studies</a>
+            </Button>
           </nav>
           <Button asChild variant="outline" className="hidden md:inline-flex border-white/20 bg-black/20 hover:bg-white/10">
             <a href="/#contact" onClick={(e) => handleScrollClick(e, 'contact')}>
@@ -135,6 +138,7 @@ export default function Header() {
                         <Link href="/about" onClick={handleMobileLinkClick} className="text-foreground/80 hover:text-primary transition-colors">About Me</Link>
                         <a href="/#works" onClick={(e) => handleMobileScrollClick(e, 'works')} className="text-foreground/80 hover:text-primary transition-colors">My Works</a>
                         <a href="/#agency" onClick={(e) => handleMobileScrollClick(e, 'agency')} className="text-foreground/80 hover:text-primary transition-colors">My Agency</a>
+                        <a href="/#branding-reports" onClick={(e) => handleMobileScrollClick(e, 'branding-reports')} className="text-foreground/80 hover:text-primary transition-colors">Case Studies</a>
                         <a href="/#contact" onClick={(e) => handleMobileScrollClick(e, 'contact')} className="text-foreground/80 hover:text-primary transition-colors">Let's Talk</a>
                     </nav>
                 </SheetContent>

@@ -30,6 +30,21 @@ const reelsData = [
     videoUrl: "/reels/r3.mp4",
     instagramUrl: "https://www.instagram.com/reel/DTLM5pJEqjn/?igsh=eDFiaDljeDFnbnZ4",
   },
+  {
+    id: 4,
+    videoUrl: "/reels/r4.mp4",
+    instagramUrl: "https://www.instagram.com/reel/DXWCa8tSxcp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    id: 5,
+    videoUrl: "/reels/r5.mp4",
+    instagramUrl: "https://www.instagram.com/reel/DXd0Y_mCQWS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    id: 6,
+    videoUrl: "/reels/r6.mp4",
+    instagramUrl: "https://www.instagram.com/reel/DVxj83pEg72/?igsh=ajk5c2E5eWJhdnRi",
+  },
 ];
 
 // Bulletproof touch detection using pointer:coarse + maxTouchPoints

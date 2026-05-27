@@ -13,7 +13,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: 'Design Showcase',
+  title: 'Crazy - Design Portfolio',
   description: 'Portfolio of a creative graphic designer.',
   icons: {
     icon: '/icon.png',

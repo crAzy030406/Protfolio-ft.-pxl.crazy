@@ -25,7 +25,7 @@ const MotionSection = ({ children, className }: { children: React.ReactNode, cla
     variants={sectionVariants}
     initial="hidden"
     whileInView="visible"
-    viewport={{ once: true, amount: 0.2 }}
+    viewport={{ once: true, amount: "some" }}
     transition={{ duration: 0.6, ease: "easeOut" }}
   >
     {children}
@@ -40,7 +40,7 @@ export default function Home() {
       <main className="flex-grow">
         <MotionSection><Hero /></MotionSection>
         <MotionSection><Skills /></MotionSection>
-        <MotionSection><Agency /></MotionSection>
+        <Agency />
         
         {/* The "My Works" section is intentionally not animated as requested */}
         <Portfolio />

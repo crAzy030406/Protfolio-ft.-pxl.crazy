@@ -116,23 +116,52 @@ function ReelCard({
   onToggleMute,
 }: ReelCardProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isInView, setIsInView] = useState(false);
   const cancelFadeRef = useRef<(() => void) | null>(null);
   const prevUnmutedRef = useRef<boolean>(false);
 
-  // Autoplay on mount — always muted initially
+  // Observe container visibility to lazy load video
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      {
+        rootMargin: "250px", // Load slightly ahead of scroll for a seamless feel
+        threshold: 0.01,
+      }
+    );
+
+    observer.observe(container);
+    return () => {
+      observer.unobserve(container);
+    };
+  }, []);
+
+  // Autoplay and control video playing state based on view state
   useEffect(() => {
     const el = videoRef.current;
     if (!el) return;
-    el.muted = true;
-    el.volume = 0;
-    el.play().catch(() => {});
-    prevUnmutedRef.current = false;
-  }, [videoUrl]);
+
+    if (isInView) {
+      el.muted = true;
+      el.volume = 0;
+      el.play().catch(() => {});
+      prevUnmutedRef.current = false;
+    } else {
+      el.pause();
+    }
+  }, [isInView, videoUrl]);
 
   // Handle audio fade when isUnmuted changes
   useEffect(() => {
     const el = videoRef.current;
     if (!el) return;
+    if (!isInView) return;
 
     const wasUnmuted = prevUnmutedRef.current;
     prevUnmutedRef.current = isUnmuted;
@@ -151,7 +180,7 @@ function ReelCard({
       const currentVol = el.volume;
       cancelFadeRef.current = fadeVolume(el, currentVol, 0, FADE_DURATION_MS);
     }
-  }, [isUnmuted]);
+  }, [isUnmuted, isInView]);
 
   // Cleanup fade on unmount
   useEffect(() => {
@@ -189,6 +218,7 @@ function ReelCard({
       className="block w-full max-w-[320px] mx-auto"
     >
       <motion.div
+        ref={containerRef}
         whileHover={!isTouchDevice ? { scale: 1.04 } : undefined}
         transition={
           !isTouchDevice
@@ -203,16 +233,23 @@ function ReelCard({
             "opacity-35 brightness-[0.6] grayscale-[30%] scale-[0.97] blur-[0.5px]"
         )}
       >
-        {/* Video */}
-        <video
-          ref={videoRef}
-          src={videoUrl}
-          loop
-          muted
-          autoPlay
-          playsInline
-          className="w-full h-full object-cover"
-        />
+        {/* Video or Loading State */}
+        {isInView ? (
+          <video
+            ref={videoRef}
+            src={videoUrl}
+            loop
+            muted
+            autoPlay
+            playsInline
+            preload="auto"
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full bg-black/40 flex items-center justify-center">
+            <span className="w-8 h-8 rounded-full border-2 border-primary/30 border-t-primary animate-spin" />
+          </div>
+        )}
 
         {/* Control Overlay */}
         <div className={overlayClass}>

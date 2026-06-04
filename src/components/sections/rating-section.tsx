@@ -13,7 +13,7 @@ interface Review {
 }
 
 interface RatingSectionProps {
-  pageId: "creatiq" | "taravoxx" | "home";
+  pageId: "creatiq" | "taravoxx" | "home" | "ignitehaus";
   pageTitle: string;
 }
 
@@ -66,6 +66,22 @@ const defaultReviews: Record<RatingSectionProps["pageId"], Review[]> = {
       date: "2026-05-26",
     },
   ],
+  ignitehaus: [
+    {
+      id: "i1",
+      name: "Alex V.",
+      rating: 5,
+      message: "The transition from 'raw creative spark' to 'structured system' is perfectly captured. The visual identity guidelines and moodboards are beautiful.",
+      date: "2026-06-01",
+    },
+    {
+      id: "i2",
+      name: "Nisha R.",
+      rating: 5,
+      message: "Incredible detail in explaining the logo iterations. The negative space H divider is genius. Clean execution!",
+      date: "2026-06-03",
+    },
+  ],
 };
 
 export default function RatingSection({ pageId, pageTitle }: RatingSectionProps) {
@@ -86,11 +102,12 @@ export default function RatingSection({ pageId, pageTitle }: RatingSectionProps)
       try {
         setReviews(JSON.parse(savedReviews));
       } catch (e) {
-        setReviews(defaultReviews[pageId]);
+        setReviews(defaultReviews[pageId] || []);
       }
     } else {
-      setReviews(defaultReviews[pageId]);
-      localStorage.setItem(storageKey, JSON.stringify(defaultReviews[pageId]));
+      const initial = defaultReviews[pageId] || [];
+      setReviews(initial);
+      localStorage.setItem(storageKey, JSON.stringify(initial));
     }
   }, [pageId, storageKey]);
 

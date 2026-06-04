@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, BookOpen, FileText } from "lucide-react";
+import { ArrowUpRight, BookOpen, FileText, FlameKindling } from "lucide-react";
 import Link from "next/link";
 
 const textVariants = {
@@ -26,6 +26,14 @@ const reportsData = [
     type: "Rebranding & Production",
     icon: FileText,
     link: "/case-studies/creatiq-media",
+  },
+  {
+    id: 3,
+    title: "Ignite Haus",
+    description: "Full brand identity rebuild — from strategy and naming analysis to visual systems, color direction, and two complete logo explorations.",
+    type: "Identity Rebuild",
+    icon: FlameKindling,
+    link: "/case-studies/ignitehaus",
   },
 ];
 
@@ -72,7 +80,7 @@ export default function BrandingReports() {
 
         {/* Reports Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto px-4 text-left"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4 text-left"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -84,7 +92,7 @@ export default function BrandingReports() {
               <Link
                 key={report.id}
                 href={report.link}
-                className="bg-black/20 backdrop-blur-md border border-white/10 hover:border-primary/40 rounded-3xl p-6 md:p-8 flex flex-col justify-between group transition-all duration-300 hover:shadow-[0_0_25px_rgba(132,199,41,0.15)]"
+                className="bg-black/20 backdrop-blur-md border border-white/10 hover:border-primary/45 rounded-3xl p-6 md:p-8 flex flex-col justify-between group transition-all duration-300 hover:shadow-[0_0_25px_rgba(132,199,41,0.14)]"
               >
                 <div>
                   <div className="flex justify-between items-start mb-6">

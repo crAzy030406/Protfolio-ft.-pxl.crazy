@@ -46,3 +46,7 @@ firestore-debug.log
 
 # zips
 *.zip
+
+# raw assets and images
+/case studies/
+/public/igh/

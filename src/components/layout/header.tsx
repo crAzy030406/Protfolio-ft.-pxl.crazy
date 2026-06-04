@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from 'next/link';
@@ -13,12 +12,13 @@ import {
   SheetClose,
   SheetHeader,
   SheetTitle,
-} from "@/components/ui/sheet"
+} from "@/components/ui/sheet";
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useScroll, useMotionValueEvent } from 'framer-motion';
+import dynamic from 'next/dynamic';
 
-export default function Header() {
+function HeaderComponent() {
   const pathname = usePathname();
   const [isMounted, setIsMounted] = useState(false);
   const { scrollY } = useScroll();
@@ -28,21 +28,20 @@ export default function Header() {
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
     // Hide header on scroll down, show on scroll up.
-    // The `latest > 50` condition prevents it from hiding on small scrolls at the top.
     if (previous !== undefined && latest > previous && latest > 50) {
       setHidden(true);
     } else {
       setHidden(false);
     }
-  })
+  });
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
-  const handleHomeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleHomeClick = (e?: React.MouseEvent<HTMLAnchorElement>) => {
     if (pathname === '/') {
-      e.preventDefault();
+      e?.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
@@ -51,8 +50,6 @@ export default function Header() {
     if (pathname === '/') {
       e.preventDefault();
       document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      // Let the default anchor behavior work
     }
   };
 
@@ -61,14 +58,12 @@ export default function Header() {
     if (pathname === '/') {
       e.preventDefault();
       document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      // The href will handle navigation for non-homepage links.
     }
   };
 
   const handleMobileLinkClick = () => {
     setIsMobileMenuOpen(false);
-  }
+  };
   
   const headerVariants = {
     visible: { y: 0, opacity: 1 },
@@ -122,27 +117,27 @@ export default function Header() {
           </Button>
           <div className="md:hidden">
             {isMounted ? (
-                <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+              <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
                 <SheetTrigger asChild>
-                    <Button variant="outline" size="icon" className="border-white/20 bg-black/20 hover:bg-white/10">
+                  <Button variant="outline" size="icon" className="border-white/20 bg-black/20 hover:bg-white/10">
                     <Menu className="h-6 w-6" />
                     <span className="sr-only">Open menu</span>
-                    </Button>
+                  </Button>
                 </SheetTrigger>
                 <SheetContent side="right" className="bg-background/90 border-l-border/50 backdrop-blur-lg">
-                    <SheetHeader>
+                  <SheetHeader>
                     <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-                    </SheetHeader>
-                    <nav className="flex flex-col gap-6 text-lg font-medium mt-16">
-                        <Link href="/" onClick={() => { handleHomeClick; handleMobileLinkClick(); }} className="text-foreground/80 hover:text-primary transition-colors">Home</Link>
-                        <Link href="/about" onClick={handleMobileLinkClick} className="text-foreground/80 hover:text-primary transition-colors">About Me</Link>
-                        <a href="/#works" onClick={(e) => handleMobileScrollClick(e, 'works')} className="text-foreground/80 hover:text-primary transition-colors">My Works</a>
-                        <a href="/#agency" onClick={(e) => handleMobileScrollClick(e, 'agency')} className="text-foreground/80 hover:text-primary transition-colors">My Agency</a>
-                        <a href="/#branding-reports" onClick={(e) => handleMobileScrollClick(e, 'branding-reports')} className="text-foreground/80 hover:text-primary transition-colors">Case Studies</a>
-                        <a href="/#contact" onClick={(e) => handleMobileScrollClick(e, 'contact')} className="text-foreground/80 hover:text-primary transition-colors">Let's Talk</a>
-                    </nav>
+                  </SheetHeader>
+                  <nav className="flex flex-col gap-6 text-lg font-medium mt-16">
+                    <Link href="/" onClick={() => { handleHomeClick(); handleMobileLinkClick(); }} className="text-foreground/80 hover:text-primary transition-colors">Home</Link>
+                    <Link href="/about" onClick={handleMobileLinkClick} className="text-foreground/80 hover:text-primary transition-colors">About Me</Link>
+                    <a href="/#works" onClick={(e) => handleMobileScrollClick(e, 'works')} className="text-foreground/80 hover:text-primary transition-colors">My Works</a>
+                    <a href="/#agency" onClick={(e) => handleMobileScrollClick(e, 'agency')} className="text-foreground/80 hover:text-primary transition-colors">My Agency</a>
+                    <a href="/#branding-reports" onClick={(e) => handleMobileScrollClick(e, 'branding-reports')} className="text-foreground/80 hover:text-primary transition-colors">Case Studies</a>
+                    <a href="/#contact" onClick={(e) => handleMobileScrollClick(e, 'contact')} className="text-foreground/80 hover:text-primary transition-colors">Let's Talk</a>
+                  </nav>
                 </SheetContent>
-                </Sheet>
+              </Sheet>
             ) : (
               <Button variant="outline" size="icon" className="border-white/20 bg-black/20 hover:bg-white/10">
                 <Menu className="h-6 w-6" />
@@ -155,3 +150,6 @@ export default function Header() {
     </motion.header>
   );
 }
+
+const Header = dynamic(() => Promise.resolve(HeaderComponent), { ssr: false });
+export default Header;

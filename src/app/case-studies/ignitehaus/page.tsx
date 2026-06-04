@@ -948,45 +948,46 @@ export default function IgniteHausCaseStudy() {
               <motion.div variants={fadeUp} className="mb-8">
                 <GlassCard accent>
                   <CardHeading title="The Central Divider Concept" icon={Type} />
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <div>
-                      <ul className="space-y-4 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                        <li className="flex items-start gap-2.5">
+                  <div className="space-y-6">
+                    {[
+                      {
+                        concept: "Typography-Led",
+                        desc: "Rather than relying on a standalone symbol, the concept is carried directly by the typography.",
+                        pillar: "Architecture",
+                        pillarDesc: "Adds clean, structural meaning directly to the letterforms."
+                      },
+                      {
+                        concept: "Negative Space",
+                        desc: "A custom central divider formed by the negative space of the letter H separates \"Ignite\" and \"Haus\".",
+                        pillar: "Foundation",
+                        pillarDesc: "Evokes stability and systemic structure, aligning with 'Haus'."
+                      },
+                      {
+                        concept: "The Gateway",
+                        desc: "The divider represents a gateway or structural pillars—the exact point where raw creative energy transitions into a solid system.",
+                        pillar: "Intentionality",
+                        pillarDesc: "Integrates the brand story directly into the logotype."
+                      }
+                    ].map((item, idx) => (
+                      <div key={idx} className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center border-b border-white/5 last:border-b-0 pb-6 last:pb-0">
+                        <div className="md:col-span-7 flex items-start gap-3">
                           <Dot />
-                          <span>
-                            <strong>Typography-Led:</strong> Rather than relying on a standalone symbol, the concept is carried directly by the typography.
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2.5">
-                          <Dot />
-                          <span>
-                            <strong>Negative Space:</strong> A custom central divider formed by the negative space of the letter <strong className="text-foreground">H</strong> separates &ldquo;Ignite&rdquo; and &ldquo;Haus&rdquo;.
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2.5">
-                          <Dot />
-                          <span>
-                            <strong>The Gateway:</strong> The divider represents a gateway or structural pillars—the exact point where raw creative energy transitions into a solid system.
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="space-y-4">
-                                            {[
-                        { title: "Architecture", body: "Adds clean, structural meaning directly to the letterforms." },
-                        { title: "Foundation", body: "Evokes stability and systemic structure, aligning with 'Haus'." },
-                        { title: "Intentionality", body: "Integrates the brand story directly into the logotype." },
-                      ].map((item) => (
-                        <div
-                          key={item.title}
-                          className="rounded-xl p-4 border"
-                          style={{ background: "rgba(234,33,33,0.05)", borderColor: "rgba(234,33,33,0.15)" }}
-                        >
-                          <p className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: "#ea2121" }}>{item.title}</p>
-                          <p className="text-xs text-muted-foreground leading-relaxed">{item.body}</p>
+                          <div>
+                            <p className="text-sm font-bold text-foreground mb-1">{item.concept}</p>
+                            <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                          </div>
                         </div>
-                      ))}
-                    </div>
+                        <div className="md:col-span-5">
+                          <div
+                            className="rounded-xl p-4 border"
+                            style={{ background: "rgba(234,33,33,0.05)", borderColor: "rgba(234,33,33,0.15)" }}
+                          >
+                            <p className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: "#ea2121" }}>{item.pillar}</p>
+                            <p className="text-xs text-muted-foreground leading-relaxed">{item.pillarDesc}</p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </GlassCard>
               </motion.div>

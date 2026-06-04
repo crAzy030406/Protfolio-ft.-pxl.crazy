@@ -161,44 +161,44 @@ const brandPersonality = [
 ];
 
 const targetAudience = [
-  { label: "Startups", desc: "Ambitious founders building from zero with creative ambition" },
-  { label: "Digital Creators", desc: "Content-first brands that need structured creative systems" },
-  { label: "SaaS Builders", desc: "Product-led companies seeking brand clarity and visual trust" },
-  { label: "Modern Educators", desc: "Knowledge brands looking for a structured identity platform" },
+  { label: "Startups", desc: "Ambitious founders building from zero." },
+  { label: "Creators", desc: "Content-first brands needing structured systems." },
+  { label: "SaaS Builders", desc: "Product teams seeking clarity and trust." },
+  { label: "Educators", desc: "Knowledge platforms needing structured identity." },
 ];
 
 const strategyShift = [
   { from: "Single Logos", to: "Brand Systems" },
-  { from: "One-off Websites", to: "Visual Platforms for Growth" },
+  { from: "One-off Websites", to: "Visual Growth Platforms" },
   { from: "Social Media Posts", to: "Creative Frameworks" },
   { from: '"Aesthetic Vibes"', to: "Clarity & Order" },
 ];
 
 const visualPrinciples = [
-  { title: "Intelligent, not corporate", desc: "We speak like humans, not robots. The visual language reflects measured confidence — not sterile formality." },
-  { title: "Modular, not static", desc: "Designs feel like building blocks. Every layout, icon, and element connects to a shared visual grammar." },
-  { title: "Dynamic, not trendy", desc: "We avoid gradient-of-the-month styles in favor of timeless architectural layouts that age well." },
+  { title: "Intelligent, not corporate", desc: "Human, confident visual language rather than sterile formality." },
+  { title: "Modular, not static", desc: "Every layout connects like building blocks in a shared grammar." },
+  { title: "Dynamic, not trendy", desc: "Architectural layouts that age well over visual fads." },
 ];
 
 const keyLearnings = [
   {
     title: "A Logo is Not a Brand",
-    body: "A logo is just the welcome mat. The real brand is the visual system — how layouts slide open, how pitch decks feel, and how social posts look when stacked.",
+    body: "The logo is just the welcome mat. The real brand is the visual system—how layouts align, how content scales, and how materials stack.",
     icon: Layers,
   },
   {
     title: "Embrace the Friction",
-    body: "Don't smooth out the contradictions in your brand. If you are both creative and structured, make that tension your superpower.",
+    body: "Contradictions make a brand unique. Balancing high creativity and deep structure forms a memorable brand superpower.",
     icon: Zap,
   },
   {
     title: "Start with Tension",
-    body: "Don't start with aesthetics. Start with the tension in your value proposition — that's where the real identity lives.",
+    body: "Define the core tension in the value proposition before designing aesthetics. That is where identity is born.",
     icon: Sparkles,
   },
   {
-    title: "Build a System, Not a Sticker",
-    body: "Make sure your design language can stretch across a website, mobile app, and billboard without losing its voice.",
+    title: "Build Systems, Not Stickers",
+    body: "Ensure the visual language stretches naturally from digital interfaces to physical mockups without losing its voice.",
     icon: LayoutGrid,
   },
 ];
@@ -365,14 +365,10 @@ export default function IgniteHausCaseStudy() {
                   <GlassCard className="h-full">
                     <CardHeading title="What is Ignite Haus?" icon={FlameKindling} />
                     <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                      Ignite Haus originally existed as a broad creative agency offering services such as{" "}
-                      <strong className="text-foreground">branding, graphic design, social media, web design,
-                      content creation, and digital solutions</strong>.
+                      Ignite Haus launched as a full-service creative agency offering branding, design, content, and web solutions.
                     </p>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      While it appeared professional and modern, its identity suffered from a common
-                      problem in the creative industry: it looked like an agency, but it didn't stand
-                      for anything specific. It could easily be confused with hundreds of others.
+                      While professional and modern, its initial identity lacked a distinct strategic position—looking like many standard agencies without standing for a core idea.
                     </p>
                   </GlassCard>
                 </motion.div>
@@ -382,8 +378,7 @@ export default function IgniteHausCaseStudy() {
                   <GlassCard className="h-full">
                     <CardHeading title="Who it speaks to" icon={Target} />
                     <p className="text-muted-foreground text-sm leading-relaxed mb-5">
-                      The brand targets ambitious brands between{" "}
-                      <strong className="text-foreground">ages 20–40</strong> who need both imagination and systems.
+                      The brand targets ambitious builders and leaders who need both high-energy imagination and clean systems.
                     </p>
                     <div className="space-y-3">
                       {targetAudience.map((row) => (
@@ -410,7 +405,7 @@ export default function IgniteHausCaseStudy() {
                       { q: "Emotion Created", a: "Energy & Trust" },
                       { q: "Positioning", a: "Strategic Partner" },
                       { q: "Tone", a: "Bold & Intelligent" },
-                      { q: "Identity Style", a: "Architectural Ã— Dynamic" },
+                      { q: "Identity Style", a: "Architectural & Dynamic" },
                       { q: "Market Type", a: "B2B & Creator" },
                     ].map((item) => (
                       <div
@@ -491,9 +486,8 @@ export default function IgniteHausCaseStudy() {
                         </div>
                       ))}
                     </div>
-                    <p className="text-muted-foreground text-xs leading-relaxed pt-3 border-t border-white/10">
-                      It was visually acceptable — but strategically generic. Swap the logo with a
-                      hundred others and nobody would notice.
+                                        <p className="text-muted-foreground text-xs leading-relaxed pt-3 border-t border-white/10">
+                      Visually adequate, but strategically generic. Swap the logo with any other agency and it would look the same.
                     </p>
                   </GlassCard>
                 </motion.div>
@@ -502,11 +496,11 @@ export default function IgniteHausCaseStudy() {
                   <GlassCard className="h-full">
                     <CardHeading title="What it failed to communicate" icon={Zap} />
                     <div className="space-y-3">
-                      {[
-                        { label: "Why Ignite Haus exists", desc: "No clear reason for being beyond 'design services'" },
-                        { label: "What differentiates it", desc: "Could be confused with any of 100 other creative agencies" },
-                        { label: "What unique value it brings", desc: "No emotional territory or strategic positioning" },
-                        { label: "What it stands for", desc: "The name held power — but the identity didn't leverage it" },
+                                            {[
+                        { label: "Why Ignite Haus exists", desc: "No clear purpose beyond generic design services." },
+                        { label: "What differentiates it", desc: "Easily confused with standard creative studios." },
+                        { label: "What unique value it brings", desc: "Lacked distinct emotional or strategic positioning." },
+                        { label: "What it stands for", desc: "The identity failed to leverage the power of its own name." },
                       ].map((row) => (
                         <div key={row.label} className="flex items-start gap-3.5 py-2 border-b border-white/5 last:border-0">
                           <Dot />
@@ -587,16 +581,11 @@ export default function IgniteHausCaseStudy() {
                     <div>
                       <CardHeading title="The Key Discovery" icon={Sparkles} />
                       <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                        At first, this felt like a contradiction. How can a brand be a wild, sparking
-                        flame and a solid, immovable house at the same time?
+                        At first glance, the name felt like a contradiction: how can a brand be a wild, sparking flame and a solid house at the same time?
                       </p>
                       <TensionBar />
                       <p className="text-muted-foreground text-sm leading-relaxed">
-                        The power of the name doesn't come from either word individually —{" "}
-                        <strong className="text-foreground">it comes from the tension between them</strong>.
-                        Pure creativity without structure is chaos. Pure structure without creativity is boring.
-                        Ignite Haus sits exactly in the middle — the bridge that organizes creative chaos
-                        into scalable business systems.
+                        The power of the name comes from the tension between the two: pure creativity without structure is chaos, while pure structure without creativity is sterile. Ignite Haus bridges them, organizing creative energy into scalable business systems.
                       </p>
                     </div>
                   </div>
@@ -629,9 +618,7 @@ export default function IgniteHausCaseStudy() {
                   <GlassCard className="h-full">
                     <CardHeading title="From Assets to Infrastructure" icon={Compass} />
                     <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                      Ignite Haus shouldn't sell assets. It should sell{" "}
-                      <strong className="text-foreground">infrastructure</strong> — systems, clarity, and
-                      creative frameworks that grow with the client.
+                      We shifted from selling isolated design assets to building visual infrastructure—systems and scalable creative frameworks that grow with clients.
                     </p>
 
                     {/* Shift table */}
@@ -661,9 +648,8 @@ export default function IgniteHausCaseStudy() {
                 <motion.div variants={fadeUp}>
                   <GlassCard className="h-full">
                     <CardHeading title="The Core Brand Idea" icon={Target} amber />
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-5">
-                      Rather than positioning Ignite Haus as another creative agency, the brand should be
-                      positioned as:
+                                        <p className="text-muted-foreground text-sm leading-relaxed mb-5">
+                      Repositioning the agency from a service vendor to a strategic partner:
                     </p>
                     <div
                       className="rounded-2xl p-5 mb-5"
@@ -673,9 +659,8 @@ export default function IgniteHausCaseStudy() {
                         &ldquo;A design-led creative partner that transforms ideas into systems, experiences, and growth.&rdquo;
                       </p>
                     </div>
-                    <p className="text-xs text-muted-foreground leading-relaxed">
-                      The emphasis shifts from delivering assets to creating momentum. Not a drive-thru —
-                      a growth infrastructure partner.
+                                        <p className="text-xs text-muted-foreground leading-relaxed">
+                      The emphasis shifts from delivering visual stickers to creating momentum and structure.
                     </p>
                   </GlassCard>
                 </motion.div>
@@ -705,127 +690,113 @@ export default function IgniteHausCaseStudy() {
               {/* Design Process — Text Descriptions */}
               <motion.div variants={fadeUp} className="mb-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                  {/* Brand Audit Notes */}
+                                    {/* Brand Audit Notes */}
                   <GlassCard>
-                    <CardHeading title="Brand Audit & Problems" icon={BookOpen} />
+                    <CardHeading title="Brand Audit & Strategy" icon={BookOpen} />
                     <div className="space-y-4 text-left">
                       <div>
-                        <p className="text-xs font-bold text-foreground mb-1 uppercase tracking-wider">Brand Purpose</p>
-                        <div className="space-y-2 text-xs text-muted-foreground leading-relaxed">
-                          <p><strong>Why IGH Exists:</strong> To solve the problem of content creation and scaling. It ensures smooth automation and flow between busy CEOs/founders and high-quality content production, helping them grow online.</p>
-                          <p><strong>Ideal Clients:</strong> Founders and CEOs who are too busy in their daily work to maintain their brand&apos;s social presence.</p>
-                          <p><strong>Problem Solved:</strong> We don&apos;t just provide content, we provide content planning that leads to guaranteed growth. <em>&ldquo;Don&apos;t trust the content — Trust the process.&rdquo;</em></p>
+                        <p className="text-[10px] font-bold text-foreground mb-1.5 uppercase tracking-wider">Brand Purpose</p>
+                        <div className="space-y-1 text-xs text-muted-foreground leading-relaxed">
+                          <p><strong>Goal:</strong> Solve scaling & content production bottlenecks for busy founders.</p>
+                          <p><strong>Value:</strong> Shifting from standard content creation to predictable content systems.</p>
                         </div>
                       </div>
                       <div className="border-t border-white/5 pt-3">
-                        <p className="text-xs font-bold text-foreground mb-1 uppercase tracking-wider">Original Brand Problems</p>
-                        <ul className="space-y-1.5 text-xs text-muted-foreground">
-                          <li className="flex items-start gap-2"><Dot /> <span><strong>Positioning:</strong> Not remarkable and highly forgettable.</span></li>
-                          <li className="flex items-start gap-2"><Dot /> <span><strong>Trust:</strong> Lacked initial trust/credibility indicators.</span></li>
-                          <li className="flex items-start gap-2"><Dot /> <span><strong>Identification:</strong> No one could understand what we actually did at first glance.</span></li>
-                          <li className="flex items-start gap-2"><Dot /> <span><strong>Authenticity:</strong> Lacked a unique, authentic voice.</span></li>
+                        <p className="text-[10px] font-bold text-foreground mb-1.5 uppercase tracking-wider">Core Challenges</p>
+                        <ul className="grid grid-cols-2 gap-1.5 text-xs text-muted-foreground">
+                          <li className="flex items-center gap-1.5"><Dot /> <span>Weak positioning</span></li>
+                          <li className="flex items-center gap-1.5"><Dot /> <span>Lack of early trust</span></li>
+                          <li className="flex items-center gap-1.5"><Dot /> <span>Low identification</span></li>
+                          <li className="flex items-center gap-1.5"><Dot /> <span>Inauthentic voice</span></li>
                         </ul>
                       </div>
                       <div className="border-t border-white/5 pt-3">
-                        <p className="text-xs font-bold text-foreground mb-1 uppercase tracking-wider">Why Ignite Haus?</p>
+                        <p className="text-[10px] font-bold text-foreground mb-1.5 uppercase tracking-wider">Why Ignite Haus?</p>
                         <ul className="space-y-1 text-xs text-muted-foreground">
-                          <li className="flex items-start gap-2"><Dot amber /> <span>Structured content planning and systems.</span></li>
-                          <li className="flex items-start gap-2"><Dot amber /> <span>Face-to-face reports and metric analysis.</span></li>
-                          <li className="flex items-start gap-2"><Dot amber /> <span>Limited client intake (better results & focus).</span></li>
-                          <li className="flex items-start gap-2"><Dot amber /> <span>Proven, repeatable growth outputs.</span></li>
+                          <li className="flex items-start gap-2"><Dot amber /> <span>Structured, automated planning systems.</span></li>
+                          <li className="flex items-start gap-2"><Dot amber /> <span>Limited client intake for high-fidelity focus.</span></li>
+                          <li className="flex items-start gap-2"><Dot amber /> <span>Repeatable, data-driven growth outputs.</span></li>
                         </ul>
                       </div>
                     </div>
                   </GlassCard>
 
-                  {/* Designer's Perspective */}
+                                    {/* Designer's Perspective */}
                   <GlassCard>
                     <CardHeading title="Designer's Perspective" icon={Compass} amber />
-                    <div className="space-y-3 text-left">
-                      <p className="text-muted-foreground text-xs leading-relaxed">
-                        Key parameters identified for the redesign:
-                      </p>
-                      <div className="grid grid-cols-2 gap-2 text-xs text-muted-foreground">
-                        <div className="flex items-center gap-2"><Dot amber /> <span>Trust</span></div>
-                        <div className="flex items-center gap-2"><Dot amber /> <span>Relief</span></div>
-                        <div className="flex items-center gap-2"><Dot amber /> <span>Smoothness</span></div>
-                        <div className="flex items-center gap-2"><Dot amber /> <span>Less Crowded</span></div>
-                        <div className="flex items-center gap-2"><Dot amber /> <span>Guided View</span></div>
-                        <div className="flex items-center gap-2"><Dot amber /> <span>Pattern Recognition</span></div>
+                    <div className="space-y-4 text-left">
+                      <div className="grid grid-cols-3 gap-2 text-xs text-muted-foreground">
+                        <span className="flex items-center gap-1.5"><Dot amber /> Trust</span>
+                        <span className="flex items-center gap-1.5"><Dot amber /> Relief</span>
+                        <span className="flex items-center gap-1.5"><Dot amber /> Clarity</span>
+                        <span className="flex items-center gap-1.5"><Dot amber /> Flow</span>
+                        <span className="flex items-center gap-1.5"><Dot amber /> Guide</span>
+                        <span className="flex items-center gap-1.5"><Dot amber /> Pattern</span>
                       </div>
                       <div className="space-y-2 border-t border-white/5 pt-3 text-xs text-muted-foreground">
-                        <p><strong>Pattern &rarr; Easy Recognition:</strong> Creating visual consistency so the brain remembers the system instantly.</p>
-                        <p><strong>Unique &rarr; Easy to Remember:</strong> Developing distinctiveness to stand out in a saturated space.</p>
-                        <p><strong>Meaning (Optional):</strong> Adding depth to the brand marks without forcing unnecessary visual stories.</p>
+                        <p><strong>Recognition:</strong> Visual consistency for instant brain storage.</p>
+                        <p><strong>Distinction:</strong> Striking layout details to stand out in a crowded market.</p>
+                        <p><strong>Meaning:</strong> Grounding the mark in the agency&apos;s architectural tension.</p>
                       </div>
                       <div
-                        className="mt-4 rounded-2xl p-4"
-                        style={{ background: "rgba(242,153,38,0.06)", border: "1px solid rgba(242,153,38,0.15)" }}
+                        className="rounded-xl p-3 text-center animate-pulse"
+                        style={{ background: "rgba(242,153,38,0.06)", border: "1px solid rgba(242,153,38,0.12)" }}
                       >
-                        <p className="text-xs text-muted-foreground italic text-center">
-                          &ldquo;Not all impactful & memorable logos are symmetrical or identical.&rdquo;
+                        <p className="text-[11px] text-muted-foreground italic">
+                          &ldquo;Impactful logos focus on memory patterns, not symmetry.&rdquo;
                         </p>
                       </div>
                     </div>
                   </GlassCard>
 
-                  {/* Design Approach */}
+                                    {/* Design Approach */}
                   <GlassCard>
                     <CardHeading title="Design Approach" icon={Layers} />
-                    <div className="space-y-4 text-left">
-                      <p className="text-muted-foreground text-xs leading-relaxed">
-                        I explored two parallel strategic directions for the symbol system:
-                      </p>
-                      <div className="rounded-2xl p-4 border" style={{ background: "rgba(234,33,33,0.04)", borderColor: "rgba(234,33,33,0.12)" }}>
-                        <p className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: "#ea2121" }}>Approach 1: Symmetrical, Trust, Meaning</p>
-                        <p className="text-xs text-muted-foreground leading-relaxed mb-2">
-                          Focuses on repetition, hierarchy, and circles. Symmetrical layouts are easily stored as patterns by the human brain, enhancing memorability.
-                        </p>
-                        <p className="text-[10px] text-muted-foreground uppercase tracking-widest font-bold">
-                          Color Science: Blue & Green (safety, trust, growth)
+                    <div className="space-y-3 text-left">
+                      <div className="rounded-xl p-3 border" style={{ background: "rgba(234,33,33,0.04)", borderColor: "rgba(234,33,33,0.12)" }}>
+                        <p className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: "#ea2121" }}>Approach 1: Symmetrical Trust</p>
+                        <p className="text-[11px] text-muted-foreground leading-relaxed">
+                          Focuses on repetition, order, and circles. Symmetry enables easy pattern-storage in the human brain, prioritizing trust and structure. (Blue/Green palette).
                         </p>
                       </div>
-                      <div className="rounded-2xl p-4 border" style={{ background: "rgba(242,153,38,0.04)", borderColor: "rgba(242,153,38,0.12)" }}>
-                        <p className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: "#f29926" }}>Approach 2: Asymmetrical, Impact, Bold, Uniqueness</p>
-                        <p className="text-xs text-muted-foreground leading-relaxed">
-                          Leverages pattern interruption. The human brain naturally notices and registers unusual, non-uniform breaks in pattern, driving higher visual impact.
+                      <div className="rounded-xl p-3 border" style={{ background: "rgba(242,153,38,0.04)", borderColor: "rgba(242,153,38,0.12)" }}>
+                        <p className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: "#f29926" }}>Approach 2: Asymmetrical Impact</p>
+                        <p className="text-[11px] text-muted-foreground leading-relaxed">
+                          Utilizes pattern interruption. The eye naturally registers unusual, non-uniform breaks in structure, driving higher visual memorability and boldness.
                         </p>
                       </div>
                     </div>
                   </GlassCard>
 
-                  {/* Symbol Exploration */}
+                                    {/* Symbol Exploration */}
                   <GlassCard>
                     <CardHeading title="Symbol Exploration" icon={Zap} amber />
-                    <div className="space-y-4 text-left">
-                      <p className="text-muted-foreground text-xs leading-relaxed">
-                        Translating strategic tension into visual cues, avoiding literal flame or house outlines:
-                      </p>
-                      <div className="space-y-3 text-xs text-muted-foreground">
-                        <div className="flex items-start gap-2.5">
+                    <div className="space-y-3.5 text-left">
+                      <div className="space-y-2.5 text-xs text-muted-foreground">
+                        <div className="flex items-start gap-2">
                           <Dot />
                           <div>
-                            <p className="font-semibold text-foreground">Growth</p>
-                            <p className="mt-0.5 text-muted-foreground leading-relaxed">Represented through exponential upward curves and rising visual lines.</p>
+                            <p className="font-semibold text-foreground">Growth:</p>
+                            <p className="text-muted-foreground leading-relaxed">Exponential upward curves and rising visual trajectories.</p>
                           </div>
                         </div>
-                        <div className="flex items-start gap-2.5">
+                        <div className="flex items-start gap-2">
                           <Dot />
                           <div>
-                            <p className="font-semibold text-foreground">Connection / Path</p>
-                            <p className="mt-0.5 text-muted-foreground leading-relaxed">Expressed via flowing path lines that guide the eye between points.</p>
+                            <p className="font-semibold text-foreground">Path:</p>
+                            <p className="text-muted-foreground leading-relaxed">Flowing lines that guide the eye between anchors.</p>
                           </div>
                         </div>
-                        <div className="flex items-start gap-2.5">
+                        <div className="flex items-start gap-2">
                           <Dot />
                           <div>
-                            <p className="font-semibold text-foreground">Nodes &rarr; Ideas</p>
-                            <p className="mt-0.5 text-muted-foreground leading-relaxed">Circular nodes placed along paths, symbolizing ideas flowing through a structured creative workflow.</p>
+                            <p className="font-semibold text-foreground">Nodes:</p>
+                            <p className="text-muted-foreground leading-relaxed">Pillars along paths representing ideas moving through a system.</p>
                           </div>
                         </div>
                       </div>
-                      <p className="text-[11px] text-muted-foreground mt-4 pt-3 border-t border-white/5 leading-relaxed">
-                        This led to a modular geometric symbol with rounded lines — clean and system-oriented, but ultimately too cold for a creative brand.
+                      <p className="text-[11px] text-muted-foreground pt-2.5 border-t border-white/5 leading-relaxed">
+                        This resulted in a geometric symbol with rounded tracks—clean, but ultimately too sterile for a creative identity.
                       </p>
                     </div>
                   </GlassCard>
@@ -963,10 +934,10 @@ export default function IgniteHausCaseStudy() {
                       </p>
                     </div>
                     <div className="space-y-4">
-                      {[
-                        { title: "Architecture", body: "The symbol felt architectural and grounded — introducing real structural meaning to the identity." },
-                        { title: "Foundation", body: "The mark hinted at stability and long-term thinking, aligning with the Haus positioning." },
-                        { title: "Brand Story", body: "The relationship between the name and symbol became more intentional than the first iteration." },
+                                            {[
+                        { title: "Architecture", body: "Adds clean, structural meaning directly to the letterforms." },
+                        { title: "Foundation", body: "Evokes stability and systemic structure, aligning with 'Haus'." },
+                        { title: "Intentionality", body: "Integrates the brand story directly into the logotype." },
                       ].map((item) => (
                         <div
                           key={item.title}
@@ -1088,21 +1059,21 @@ export default function IgniteHausCaseStudy() {
                       the raw energy of Ignite against the dark solidity of Haus.
                     </p>
                     <div className="space-y-4">
-                      {[
+                                            {[
                         {
                           color: "#ea2121",
                           title: "Red — The Ignite Side",
-                          body: "Red carries urgency, energy, and creative momentum. It signals that something is happening — ideas firing, momentum building.",
+                          body: "Signals urgency, creative energy, and dynamic ideas firing.",
                         },
                         {
                           color: "#f29926",
                           title: "Amber — The Bridge",
-                          body: "Orange/amber lives in the tension between Ignite and Haus — warm enough to feel human, structured enough to feel reliable.",
+                          body: "Bridges energy and structure—human, inviting, yet controlled.",
                         },
                         {
                           color: "#0e0e0e",
                           title: "Near-Black — The Haus Side",
-                          body: "The near-black anchors the brand. It's the foundation, the structure, the permanent pillar that everything else is built on.",
+                          body: "Anchors the brand. Evokes structural depth and solid foundation.",
                         },
                       ].map((item) => (
                         <div key={item.title} className="flex items-start gap-3.5">

@@ -348,7 +348,7 @@ export default function IgniteHausCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Step 01 — Understand the Brand</SectionLabel>
@@ -445,7 +445,7 @@ export default function IgniteHausCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Before the Rebuild</SectionLabel>
@@ -531,7 +531,7 @@ export default function IgniteHausCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>The Strategic Discovery</SectionLabel>
@@ -613,7 +613,7 @@ export default function IgniteHausCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Step 02 — Shift the Strategy</SectionLabel>
@@ -691,7 +691,7 @@ export default function IgniteHausCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.08 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Step 03 — Design Sandbox</SectionLabel>
@@ -898,7 +898,7 @@ export default function IgniteHausCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.08 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Step 04 — The Architect&apos;s Desk</SectionLabel>
@@ -1027,7 +1027,7 @@ export default function IgniteHausCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Color System</SectionLabel>
@@ -1131,7 +1131,7 @@ export default function IgniteHausCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Brand Voice & System</SectionLabel>
@@ -1232,7 +1232,7 @@ export default function IgniteHausCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Final Verdict</SectionLabel>

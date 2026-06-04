@@ -314,7 +314,7 @@ export default function TaraVoxxCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Step 01 — Understand the Brand</SectionLabel>
@@ -430,7 +430,7 @@ export default function TaraVoxxCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.15 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <GlassCard>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
@@ -494,7 +494,7 @@ export default function TaraVoxxCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.15 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Target & Tone</SectionLabel>
@@ -575,7 +575,7 @@ export default function TaraVoxxCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>The Challenge</SectionLabel>
@@ -644,7 +644,7 @@ export default function TaraVoxxCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Strategic Direction</SectionLabel>
@@ -706,7 +706,7 @@ export default function TaraVoxxCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Design Exploration</SectionLabel>
@@ -783,7 +783,7 @@ export default function TaraVoxxCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.08 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Final Visual Direction</SectionLabel>
@@ -840,7 +840,7 @@ export default function TaraVoxxCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Typography System</SectionLabel>
@@ -919,7 +919,7 @@ export default function TaraVoxxCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Color System</SectionLabel>
@@ -1040,7 +1040,7 @@ export default function TaraVoxxCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Logo Variants</SectionLabel>
@@ -1115,7 +1115,7 @@ export default function TaraVoxxCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
               className="max-w-3xl mx-auto text-center flex flex-col items-center"
             >
               <motion.div variants={fadeUp} className="text-center flex flex-col items-center w-full">
@@ -1163,7 +1163,7 @@ export default function TaraVoxxCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center flex flex-col items-center">
                 <SectionLabel>Closing Thoughts</SectionLabel>
@@ -1257,7 +1257,7 @@ export default function TaraVoxxCaseStudy() {
               variants={stagger}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.08 }}
+              viewport={{ once: true, amount: "some" }}
             >
               <motion.div variants={fadeUp} className="mb-12 text-center">
                 <SectionLabel>Key Lessons</SectionLabel>

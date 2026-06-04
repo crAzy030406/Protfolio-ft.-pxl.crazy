@@ -62,7 +62,7 @@ export default function Skills() {
               className="bg-black/20 backdrop-blur-md border border-white/20 shadow-lg rounded-3xl p-8 md:p-12"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: "some" }}
               variants={{ visible: { transition: { staggerChildren: 0.2 }}}}
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -107,7 +107,7 @@ export default function Skills() {
               className="bg-black/20 backdrop-blur-md border border-white/20 shadow-lg rounded-3xl p-8 md:p-12"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: "some" }}
               variants={{ visible: { transition: { staggerChildren: 0.2 }}}}
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
@@ -126,7 +126,7 @@ export default function Skills() {
               className="bg-black/20 backdrop-blur-md border border-white/20 shadow-lg rounded-3xl p-8 md:p-12"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: "some" }}
               variants={{ visible: { transition: { staggerChildren: 0.2 }}}}
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">

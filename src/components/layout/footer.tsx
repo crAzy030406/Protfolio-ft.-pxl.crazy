@@ -34,7 +34,7 @@ export default function Footer() {
       className="border-t border-white/20 bg-black/20 backdrop-blur-md"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: "some" }}
       variants={footerVariants}
     >
       <div className="container mx-auto px-4 py-12 md:py-16">

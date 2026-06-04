@@ -364,12 +364,16 @@ export default function IgniteHausCaseStudy() {
                 <motion.div variants={fadeUp}>
                   <GlassCard className="h-full">
                     <CardHeading title="What is Ignite Haus?" icon={FlameKindling} />
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                      Ignite Haus launched as a full-service creative agency offering branding, design, content, and web solutions.
-                    </p>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      While professional and modern, its initial identity lacked a distinct strategic position—looking like many standard agencies without standing for a core idea.
-                    </p>
+                    <ul className="space-y-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                      <li className="flex items-start gap-2.5">
+                        <Dot />
+                        <span>Launched as a full-service agency for branding, design, content, and web.</span>
+                      </li>
+                      <li className="flex items-start gap-2.5">
+                        <Dot />
+                        <span>Initial identity lacked a unique strategic position, blending in with other standard design studios.</span>
+                      </li>
+                    </ul>
                   </GlassCard>
                 </motion.div>
 
@@ -377,9 +381,16 @@ export default function IgniteHausCaseStudy() {
                 <motion.div variants={fadeUp}>
                   <GlassCard className="h-full">
                     <CardHeading title="Who it speaks to" icon={Target} />
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-5">
-                      The brand targets ambitious builders and leaders who need both high-energy imagination and clean systems.
-                    </p>
+                    <ul className="space-y-2 text-xs sm:text-sm text-muted-foreground leading-relaxed mb-5">
+                      <li className="flex items-start gap-2.5">
+                        <Dot amber />
+                        <span>Targets creators, SaaS builders, and ambitious startup founders.</span>
+                      </li>
+                      <li className="flex items-start gap-2.5">
+                        <Dot amber />
+                        <span>Speaks to leaders needing both creative energy and systematic order.</span>
+                      </li>
+                    </ul>
                     <div className="space-y-3">
                       {targetAudience.map((row) => (
                         <div key={row.label} className="flex items-start gap-3.5 py-2 border-b border-white/5 last:border-0">
@@ -486,9 +497,16 @@ export default function IgniteHausCaseStudy() {
                         </div>
                       ))}
                     </div>
-                                        <p className="text-muted-foreground text-xs leading-relaxed pt-3 border-t border-white/10">
-                      Visually adequate, but strategically generic. Swap the logo with any other agency and it would look the same.
-                    </p>
+                    <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-white/10 leading-relaxed">
+                      <li className="flex items-start gap-2">
+                        <Dot amber />
+                        <span>Visually adequate, but strategically generic.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Dot amber />
+                        <span>Swapping the logo with a competitor wouldn&apos;t change the message.</span>
+                      </li>
+                    </ul>
                   </GlassCard>
                 </motion.div>
 
@@ -580,13 +598,23 @@ export default function IgniteHausCaseStudy() {
                     </div>
                     <div>
                       <CardHeading title="The Key Discovery" icon={Sparkles} />
-                      <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                        At first glance, the name felt like a contradiction: how can a brand be a wild, sparking flame and a solid house at the same time?
-                      </p>
+                      <ul className="space-y-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                        <li className="flex items-start gap-2.5">
+                          <Dot />
+                          <span><strong>The Tension:</strong> How can a brand be a wild sparking flame (Ignite) and a stable shelter (Haus) simultaneously?</span>
+                        </li>
+                      </ul>
                       <TensionBar />
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        The power of the name comes from the tension between the two: pure creativity without structure is chaos, while pure structure without creativity is sterile. Ignite Haus bridges them, organizing creative energy into scalable business systems.
-                      </p>
+                      <ul className="space-y-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                        <li className="flex items-start gap-2.5">
+                          <Dot amber />
+                          <span><strong>The Balance:</strong> Pure creativity without structure is chaos. Pure structure without creativity is sterile.</span>
+                        </li>
+                        <li className="flex items-start gap-2.5">
+                          <Dot amber />
+                          <span><strong>The Integration:</strong> Ignite Haus bridges the two, packaging raw creative energy into scalable, solid systems.</span>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </GlassCard>
@@ -617,9 +645,16 @@ export default function IgniteHausCaseStudy() {
                 <motion.div variants={fadeUp} className="lg:col-span-2">
                   <GlassCard className="h-full">
                     <CardHeading title="From Assets to Infrastructure" icon={Compass} />
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                      We shifted from selling isolated design assets to building visual infrastructure—systems and scalable creative frameworks that grow with clients.
-                    </p>
+                    <ul className="space-y-3 text-xs sm:text-sm text-muted-foreground leading-relaxed mb-6">
+                      <li className="flex items-start gap-2.5">
+                        <Dot />
+                        <span><strong>The Shift:</strong> Moving away from one-off visual deliverables or static stickers.</span>
+                      </li>
+                      <li className="flex items-start gap-2.5">
+                        <Dot />
+                        <span><strong>The Solution:</strong> Building scalable visual infrastructure and modular systems that adapt as clients grow.</span>
+                      </li>
+                    </ul>
 
                     {/* Shift table */}
                     <div className="space-y-3">
@@ -648,20 +683,24 @@ export default function IgniteHausCaseStudy() {
                 <motion.div variants={fadeUp}>
                   <GlassCard className="h-full">
                     <CardHeading title="The Core Brand Idea" icon={Target} amber />
-                                        <p className="text-muted-foreground text-sm leading-relaxed mb-5">
-                      Repositioning the agency from a service vendor to a strategic partner:
-                    </p>
                     <div
-                      className="rounded-2xl p-5 mb-5"
+                      className="rounded-2xl p-5 mb-4"
                       style={{ background: "rgba(234,33,33,0.06)", border: "1px solid rgba(234,33,33,0.18)" }}
                     >
-                      <p className="text-sm font-bold text-foreground leading-snug italic">
+                      <p className="text-xs sm:text-sm font-bold text-foreground leading-relaxed italic">
                         &ldquo;A design-led creative partner that transforms ideas into systems, experiences, and growth.&rdquo;
                       </p>
                     </div>
-                                        <p className="text-xs text-muted-foreground leading-relaxed">
-                      The emphasis shifts from delivering visual stickers to creating momentum and structure.
-                    </p>
+                    <ul className="space-y-2 text-xs text-muted-foreground leading-relaxed">
+                      <li className="flex items-start gap-2">
+                        <Dot amber />
+                        <span><strong>New Stance:</strong> Position the agency as a strategic design partner rather than a task vendor.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Dot amber />
+                        <span><strong>Visual Growth:</strong> Move focus from simple assets to creative momentum and structure.</span>
+                      </li>
+                    </ul>
                   </GlassCard>
                 </motion.div>
               </div>
@@ -911,27 +950,26 @@ export default function IgniteHausCaseStudy() {
                   <CardHeading title="The Central Divider Concept" icon={Type} />
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div>
-                      <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                        Rather than relying on a standalone icon, I wanted the typography to carry the
-                        meaning. I separated <strong className="text-foreground">&ldquo;Ignite&rdquo;</strong> and{" "}
-                        <strong className="text-foreground">&ldquo;Haus&rdquo;</strong> using a custom central
-                        divider that was the negative space formed by the letter{" "}
-                        <strong className="text-foreground">H</strong>.
-                      </p>
-                      <div
-                        className="rounded-xl p-4 font-mono text-sm mb-4"
-                        style={{ background: "rgba(0,0,0,0.4)", border: "1px solid rgba(255,255,255,0.08)" }}
-                      >
-                        <p className="text-foreground mb-1">{"  I G N I T E  [ â€– ]  H A U S"}</p>
-                        <p className="text-muted-foreground text-xs mt-2">{"                   ^"}</p>
-                        <p className="text-muted-foreground text-xs">{"       Negative Space \"H\""}</p>
-                        <p className="text-muted-foreground text-xs">{"       (Gateway / Pillars)"}</p>
-                      </div>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        The divider represents a <strong className="text-foreground">gateway</strong> or
-                        structural pillars — the exact point where raw creative energy (Ignite) transitions
-                        into a solid system (Haus).
-                      </p>
+                      <ul className="space-y-4 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                        <li className="flex items-start gap-2.5">
+                          <Dot />
+                          <span>
+                            <strong>Typography-Led:</strong> Rather than relying on a standalone symbol, the concept is carried directly by the typography.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2.5">
+                          <Dot />
+                          <span>
+                            <strong>Negative Space:</strong> A custom central divider formed by the negative space of the letter <strong className="text-foreground">H</strong> separates &ldquo;Ignite&rdquo; and &ldquo;Haus&rdquo;.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2.5">
+                          <Dot />
+                          <span>
+                            <strong>The Gateway:</strong> The divider represents a gateway or structural pillars—the exact point where raw creative energy transitions into a solid system.
+                          </span>
+                        </li>
+                      </ul>
                     </div>
                     <div className="space-y-4">
                                             {[
@@ -976,14 +1014,18 @@ export default function IgniteHausCaseStudy() {
 
               <motion.div variants={fadeUp}>
                 <GlassCard accent>
-                  <div className="text-center max-w-2xl mx-auto">
-                    <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#f29926" }}>The Final Direction</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      This typographic approach became the chosen direction — the central H divider
-                      carries genuine architectural meaning, the brand story is embedded directly into
-                      the letterforms, and the identity system can scale across any medium while
-                      maintaining its structured creative philosophy.
-                    </p>
+                  <div className="max-w-2xl mx-auto">
+                    <p className="text-xs font-bold uppercase tracking-widest mb-4 text-center" style={{ color: "#f29926" }}>The Final Direction</p>
+                    <ul className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                      <li className="flex items-start gap-2.5">
+                        <Dot amber />
+                        <span><strong>Embedded Story:</strong> The central H divider integrates structural architectural meaning directly into the letterforms.</span>
+                      </li>
+                      <li className="flex items-start gap-2.5">
+                        <Dot amber />
+                        <span><strong>True Scalability:</strong> A responsive typographic mark that scales cleanly across digital interfaces and physical environments.</span>
+                      </li>
+                    </ul>
                   </div>
                 </GlassCard>
               </motion.div>
@@ -1054,10 +1096,12 @@ export default function IgniteHausCaseStudy() {
                 <motion.div variants={fadeUp}>
                   <GlassCard className="h-full">
                     <CardHeading title="Color Psychology" icon={Sparkles} amber />
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-5">
-                      The palette was designed to visually express the core brand tension —
-                      the raw energy of Ignite against the dark solidity of Haus.
-                    </p>
+                    <ul className="space-y-2 text-xs sm:text-sm text-muted-foreground leading-relaxed mb-5">
+                      <li className="flex items-start gap-2.5">
+                        <Dot amber />
+                        <span>Designed to visually translate the brand tension—contrasting raw fire with structural grounding.</span>
+                      </li>
+                    </ul>
                     <div className="space-y-4">
                                             {[
                         {

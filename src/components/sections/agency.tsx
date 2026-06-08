@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Instagram, Volume2, VolumeX, Maximize2, ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
+import { Instagram, Linkedin, ExternalLink, Volume2, VolumeX, Maximize2, ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRef, useState, useEffect, useCallback } from "react";
@@ -545,12 +545,13 @@ export default function Agency() {
         </motion.div>
 
         <motion.div
-          className="mt-12"
+          className="mt-12 flex flex-col items-center justify-center gap-4"
           variants={textVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
+          {/* Ignite Haus Website Button */}
           <Button
             asChild
             size="lg"
@@ -561,13 +562,57 @@ export default function Agency() {
             className="hover:bg-accent shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-primary/30"
           >
             <Link
-              href="https://www.instagram.com/ignite.haus?igsh=Yjk3bmdvYzF5aXE0&utm_source=qr"
+              href="https://ignitehaus.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Visit Our Instagram
+              <ExternalLink className="w-4 h-4 mr-2" />
+              Ignite Haus Website
             </Link>
           </Button>
+
+          {/* Social Icon Buttons */}
+          <div className="flex items-center gap-3">
+            {/* Instagram Icon Button */}
+            <Button
+              asChild
+              size="lg"
+              style={{
+                backgroundColor: "hsl(var(--primary))",
+                color: "hsl(var(--primary-foreground))",
+              }}
+              className="hover:bg-accent shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-primary/30 px-3"
+            >
+              <Link
+                href="https://www.instagram.com/ignite.haus?igsh=Yjk3bmdvYzF5aXE0&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visit Our Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </Link>
+            </Button>
+
+            {/* LinkedIn Icon Button */}
+            <Button
+              asChild
+              size="lg"
+              style={{
+                backgroundColor: "hsl(var(--primary))",
+                color: "hsl(var(--primary-foreground))",
+              }}
+              className="hover:bg-accent shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-primary/30 px-3"
+            >
+              <Link
+                href="https://www.linkedin.com/company/ignite-haus/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visit Our LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </Link>
+            </Button>
+          </div>
         </motion.div>
       </div>
     </section>
